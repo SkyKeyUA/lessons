@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork 2</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+      body {
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+      "
+      class="wrapper"
+    >
+      <header class="header">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; gap: 20px"
+          class="header__container"
+        >
+          <a title="HTML 5" href="index.html" class="header__logo">
+            <img src="img/images.png" alt="HTML 5" />
+          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul style="display: flex; gap: 20px" class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link">Home Work 02</a>
+                  <ul class="menu__submenu submenu">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">First</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Second</a>
+                      <ul class="submenu__subsubmenu subsubmenu">
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">First</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Second</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Third</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Third</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="aboutUs.html" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="contacts.html" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header__btn">pop-up</button>
+        </div>
+      </header>
+      <main style="flex: 1 1 auto; margin: 50px 0px" class="page__home home">
+        <section class="navigation">
+          <mark>ID Navigation</mark>
+          <nav>
+            <ul style="display: flex; gap: 50px">
+              <li>
+                <a href="#aboutMe">About Me</a>
+              </li>
+              <li>
+                <a href="#summery">Summery</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#clientfeedback">Client Feedback</a>
+              </li>
+              <li>
+                <a href="#education">Education and Training</a>
+              </li>
+              <li>
+                <a href="#contact">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section id="aboutMe">
+          <h2>About Me</h2>
+          <img style="max-height: 200px" src="img/1.jpg" alt="Photo of Oleksandr in Casa Loma" />
+          <h1>My name is Oleksandr.</h1>
+          <ol>
+            <li>I'm 28 years old.</li>
+            <li>I come from Ukraine.</li>
+          </ol>
+          <p>
+            <mark>My hobby</mark> <span>is spending time with friends</span> playing board games,
+            bowling.
+          </p>
+          <p><mark>I love</mark> training in the gym.</p>
+          <p><mark>I like</mark> watching Anime and tv shows.</p>
+        </section>
+        <section id="summery">
+          <h2>Summery</h2>
+          <p>
+            I offer 4 years of hands-on experience designing, developing, shipping, and maintaining
+            large-scale products where availability, performance, and security are paramount.
+          </p>
+          <p>
+            I have established myself as a versatile software engineer who enthusiastically takes on
+            new problems across the full-stack.
+          </p>
+        </section>
+        <section id="skills">
+          <h2>Skills</h2>
+          <div style="display: flex; gap: 20px">
+            <div>
+              <h3>Specializations:</h3>
+              <ul>
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Nest.js</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Node.js</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Databases:</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>SQL</li>
+                <li>MongoDB/Mongoose</li>
+                <li>PostgreSQL (Postgres)</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tools & Frameworks:</h3>
+              <ul>
+                <li>React Hooks</li>
+                <li>Redux Toolkit</li>
+                <li>Axios + Fetch</li>
+                <li>React Router</li>
+                <li>Git</li>
+                <li>Bash</li>
+                <li>VS Code</li>
+                <li>SCSS(SASS)</li>
+                <li>CSS-Modules</li>
+                <li>Tailwind</li>
+                <li>Photoshop</li>
+                <li>Figma</li>
+                <li>WordPress</li>
+                <li>SEO</li>
+                <li>Vercel</li>
+                <li>Sequelize</li>
+                <li>Insomnia</li>
+                <li>Postman</li>
+                <li>Express + Validator</li>
+                <li>JSON Web Token (JWT)</li>
+                <li>BCrypt</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="clientfeedback">
+          <h2>Client Feedback</h2>
+          <div>
+            <img style="max-width: 200px" src="img/feedback/1.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/2.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/3.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/4.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/5.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/6.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/7.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/8.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/9.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/10.jpg" alt="feedback from client" />
+            <img style="max-width: 200px" src="img/feedback/11.jpg" alt="feedback from client" />
+          </div>
+        </section>
+        <section id="education">
+          <h2>Education and Training</h2>
+          <ol>
+            <li>Certificate of Completion for React and Redux Courses, SoloLearn, 2023</li>
+            <li>
+              Certificate of Completion for Basic HTML, CSS, and JavaScript Courses, SoloLearn, 2021
+            </li>
+            <li>
+              Master's degree in international economics, State University of Trade and Economics,
+              city of Kyiv, Ukraine, Faculty of International Trade and Law, specialty
+              "International Economics", 2012 – 2018
+            </li>
+          </ol>
+        </section>
+        <section id="contact">
+          <h2>Contacts</h2>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                title="Link to LinkedIn"
+                href="https://www.linkedin.com/in/oleksandr-veremiienko/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Link to UpWork"
+                href="https://www.upwork.com/freelancers/oleksandrv"
+                >UpWork</a
+              >
+            </li>
+            <li><a target="_blank" title="Call Me" href="tel:+15877168483">Phone number</a></li>
+            <li>
+              <a target="_blank" title="Link to Telegram" href="https://t.me/SkyKeyUA">Telegram</a>
+            </li>
+            <li>
+              <a target="_blank" title="Link to Gmail" href="mailto:veremiienkoov96@gmail.com"
+                >Gmail</a
+              >
+            </li>
+            <li>
+              <a target="_blank" title="Link to GitHub" href="https://github.com/SkyKeyUA"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; gap: 20px"
+          class="footer__container"
+        >
+          <a title="HTML 5" href="index.html" class="footer__logo">
+            <img src="img/images.png" alt="HTML 5" />
+          </a>
+          <div class="footer__menu menu">
+            <nav class="menu__body">
+              <ul style="display: flex; gap: 20px" class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link">Home Work 02</a>
+                  <ul class="menu__submenu submenu">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">First</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Second</a>
+                      <ul class="submenu__subsubmenu subsubmenu">
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">First</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Second</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Third</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Third</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="aboutUs.html" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="contacts.html" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="footer__btn">pop-up</button>
+        </div>
+        <div style="text-align: center">Copyright 2024 OLEKSANDR</div>
+      </footer>
+    </div>
+  </body>
+</html>
