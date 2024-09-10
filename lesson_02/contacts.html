@@ -4,19 +4,161 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+      body {
+      }
+    </style>
   </head>
   <body>
-    <!-- Yarik!!! -->
-    <!-- Crtl + / = Commit -->
-    <header></header>
-    <main>
-      <h1>Contacts</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus iure aspernatur
-        eveniet unde excepturi ipsam praesentium, illo earum in ipsum non suscipit aliquid tempora
-        necessitatibus, eaque est itaque atque.
-      </p>
-    </main>
-    <footer></footer>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+      "
+      class="wrapper"
+    >
+      <header class="header">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; gap: 20px"
+          class="header__container"
+        >
+          <a title="HTML 5" href="index.html" class="header__logo">
+            <img src="img/images.png" alt="HTML 5" />
+          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul style="display: flex; gap: 20px" class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link">Home Work 02</a>
+                  <ul class="menu__submenu submenu">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">First</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Second</a>
+                      <ul class="submenu__subsubmenu subsubmenu">
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">First</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Second</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Third</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Third</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="aboutUs.html" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="contacts.html" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header__btn">pop-up</button>
+        </div>
+      </header>
+      <main style="flex: 1 1 auto; margin: 50px 0px" class="page__contacts contacts">
+        <section>
+          <h2>Contacts</h2>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                title="Link to LinkedIn"
+                href="https://www.linkedin.com/in/oleksandr-veremiienko/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Link to UpWork"
+                href="https://www.upwork.com/freelancers/oleksandrv"
+                >UpWork</a
+              >
+            </li>
+            <li><a target="_blank" title="Call Me" href="tel:+15877168483">Phone number</a></li>
+            <li>
+              <a target="_blank" title="Link to Telegram" href="https://t.me/SkyKeyUA">Telegram</a>
+            </li>
+            <li>
+              <a target="_blank" title="Link to Gmail" href="mailto:veremiienkoov96@gmail.com"
+                >Gmail</a
+              >
+            </li>
+            <li>
+              <a target="_blank" title="Link to GitHub" href="https://github.com/SkyKeyUA"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; gap: 20px"
+          class="footer__container"
+        >
+          <a title="HTML 5" href="index.html" class="footer__logo">
+            <img src="img/images.png" alt="HTML 5" />
+          </a>
+          <div class="footer__menu menu">
+            <nav class="menu__body">
+              <ul style="display: flex; gap: 20px" class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link">Home Work 02</a>
+                  <ul class="menu__submenu submenu">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">First</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Second</a>
+                      <ul class="submenu__subsubmenu subsubmenu">
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">First</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Second</a>
+                        </li>
+                        <li class="subsubmenu__item">
+                          <a href="#" class="subsubmenu__link">Third</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Third</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="aboutUs.html" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="contacts.html" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="footer__btn">pop-up</button>
+        </div>
+        <div style="text-align: center">Copyright 2024 OLEKSANDR</div>
+      </footer>
+    </div>
   </body>
 </html>
