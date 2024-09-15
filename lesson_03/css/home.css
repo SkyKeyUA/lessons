@@ -46,6 +46,10 @@
 .star__container * {
   color: rgb(255, 0, 0);
 }
+.star__first-child,
+.star__second-child {
+  background: green;
+}
 /* 
 #history {
 }
