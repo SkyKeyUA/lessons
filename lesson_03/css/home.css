@@ -22,8 +22,11 @@
   color: white;
   background: blue;
 }
-.history__container a + p {
+.home__history .history__container a + p {
   color: #7a1010;
+}
+.history__container.min-container {
+  color: rgb(20, 60, 23);
 }
 .cultural__container p span {
   font-style: italic;
