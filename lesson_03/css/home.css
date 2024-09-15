@@ -43,6 +43,9 @@
 .forward__container > p {
   color: #209319;
 }
+.star__container * {
+  color: rgb(255, 0, 0);
+}
 /* 
 #history {
 }
