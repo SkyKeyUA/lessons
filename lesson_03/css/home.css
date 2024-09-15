@@ -1,4 +1,5 @@
 @import url(style.css);
+@import url(common.css);
 
 .page__home {
   flex: 1 1 auto;
@@ -6,46 +7,38 @@
 }
 .home {
 }
-.navigation {
-  padding: 0px 10px;
-}
-.navigation div {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.navigation ul {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 20px;
-  color: blue;
-}
-.navigation ul li {
-  font-size: 18px;
-}
+
 .summery__container h1 {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 20px;
 }
-.min-container h2 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 20px;
+.summery__container div > span {
+  color: blue;
+  background: yellow;
 }
-.min-container {
-  max-width: 600px;
-  margin-bottom: 20px;
+.summery__container div span + span {
+  font-style: italic;
+  color: white;
+  background: blue;
 }
-.min-container p:not(:last-child) {
-  margin-bottom: 20px;
+.history__container a + p {
+  color: #7a1010;
 }
-.min-container span {
+.cultural__container p span {
   font-style: italic;
 }
-.min-container a img {
-  max-width: 500px;
-  margin-bottom: 20px;
+.cultural__container a ~ p {
+  color: green;
+}
+.beauty__container p + p {
+  color: rgb(198, 48, 171);
+}
+.modern__container p ~ p {
+  color: #306789;
+}
+.forward__container > p {
+  color: #209319;
 }
 /* 
 #history {
