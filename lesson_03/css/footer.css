@@ -1,0 +1,43 @@
+.footer {
+  margin: 20px 0px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer__logo {
+}
+.footer__menu {
+}
+.menu {
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+.menu__item {
+}
+.menu__link {
+}
+.menu__submenu {
+}
+.submenu {
+}
+.submenu__item {
+}
+.submenu__link {
+}
+.submenu__subsubmenu {
+}
+.subsubmenu {
+}
+.subsubmenu__item {
+}
+.subsubmenu__link {
+}
+.footer__btn {
+}

@@ -1,0 +1,19 @@
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  color: rgb(49, 30, 96);
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+[class*='__container'] {
+  /* max-width: 1200px; */
+  padding: 0px 10px;
+}

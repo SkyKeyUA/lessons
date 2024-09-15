@@ -1,0 +1,72 @@
+@import url(style.css);
+
+.page__home {
+  flex: 1 1 auto;
+  margin: 50px 0px;
+}
+.home {
+}
+.navigation {
+  padding: 0px 10px;
+}
+.navigation div {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.navigation ul {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  color: blue;
+}
+.navigation ul li {
+  font-size: 18px;
+}
+.summery__container h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.min-container h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.min-container {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.min-container p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.min-container span {
+  font-style: italic;
+}
+.min-container a img {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+/* 
+#history {
+}
+#cultural {
+}
+#beauty {
+}
+#modern {
+}
+#forward {
+}
+#conclusion {
+}
+.min-container > h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.min-container a > img {
+  max-width: 500px;
+  margin-bottom: 20px;
+} 
+  */
