@@ -1,0 +1,140 @@
+@import url('style.css');
+@import url('common.css');
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.humanity__container {
+  font-family: 'Lora', serif;
+}
+.humanity__container div span {
+  text-decoration: underline;
+  color: #211148;
+  text-decoration-color: rgb(20, 5, 65);
+  text-shadow: 1px 1px 1px rgba(80, 94, 152, 0.649), -1px -1px 1px #c52d2d;
+  font-style: italic;
+  font-weight: 700;
+}
+.origins {
+  font-family: 'Aileron', sans-serif;
+}
+.origins__container {
+}
+.origins h2 {
+  font-weight: 900;
+}
+.origins div {
+  font-weight: 100;
+  font-style: italic;
+}
+.revolution__container {
+  text-align: center;
+}
+.revolution__container h2 {
+  font-family: 'ChunkFive', serif;
+}
+.revolution__container div {
+  font-family: 'ChunkFive Print', serif;
+  text-decoration: underline #093852 double;
+}
+.rise {
+  text-align: end;
+  font-family: 'Lora', serif;
+}
+.rise h2 {
+  text-shadow: 1px 1px 1px #132238;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #2c0b80;
+}
+.rise p {
+  text-shadow: 1px 1px 1px #132238;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: #2c0b80;
+}
+.rise__container {
+}
+.conclusion {
+  font-family: 'Mingzat', sans-serif;
+}
+.conclusion__container {
+  text-align: justify;
+}
+.conclusion__container h2 {
+  text-decoration: overline;
+}
+.conclusion__container div {
+  text-decoration: underline #c52d2d dotted;
+}
+.user {
+  font-family: 'Work Sans', sans-serif;
+}
+.user__container {
+  max-width: 536px;
+}
+.origins__container h2,
+.revolution__container h2,
+.rise__container h2,
+.conclusion__container h2 {
+  font-size: 24px;
+}
+.humanity__container,
+.origins__container,
+.revolution__container,
+.rise__container,
+.conclusion__container {
+  max-width: 536px;
+  line-height: 1.5;
+}
+.user h2 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.32;
+  color: #132238;
+}
+.user p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #556070;
+}
+.about-us {
+  font-family: 'DM Sans', sans-serif;
+}
+.about-us__container {
+  max-width: 651px;
+}
+.about-us h2 {
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 1.08;
+  color: #1e1b39;
+}
+.about-us p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.75;
+  color: #474464;
+}
+.introduce {
+  font-family: 'Roboto', sans-serif;
+}
+.introduce__container {
+  max-width: 539px;
+}
+.introduce h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.32;
+  color: #091133;
+}
+.introduce p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #505f98;
+}
