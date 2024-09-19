@@ -97,7 +97,6 @@ h1 {
   color: #132238;
 }
 .user p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
   color: #556070;
@@ -115,7 +114,6 @@ h1 {
   color: #1e1b39;
 }
 .about-us p {
-  font-weight: 400;
   font-size: 24px;
   line-height: 1.75;
   color: #474464;
@@ -133,7 +131,6 @@ h1 {
   color: #091133;
 }
 .introduce p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   color: #505f98;
