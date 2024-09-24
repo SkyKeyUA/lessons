@@ -5,14 +5,6 @@
 }
 .home {
 }
-
-h1 {
-  font-size: 32px;
-  font-weight: 700;
-  text-shadow: 1px 1px 1px #1c0f3d;
-  text-align: center;
-  margin-block-end: 50px;
-}
 .devices {
   font-family: 'Manrope', sans-serif;
   line-height: 1.5;
@@ -41,7 +33,7 @@ h1 {
   font-size: 24px;
   font-weight: 600;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .devices__items {
   padding: 50px;
@@ -60,6 +52,7 @@ h1 {
   border: 1px solid #1f1f1f;
   background: #141414;
   margin-inline-end: 16px;
+  vertical-align: middle;
 }
 .devices__text {
   color: #999;
@@ -88,28 +81,35 @@ h1 {
 }
 .introduce__body div {
   color: #505f98;
-  font-size: 18px;
   line-height: 1.667;
+}
+.introduce__content {
+  font-size: 18px;
   margin-block-end: 70px;
 }
-.introduce__body div p:first-child {
+.introduce__text {
   margin-block-end: 30px;
+}
+.introduce__bottom {
+  font-size: 0px;
 }
 .btn {
   inline-size: 189px;
-  block-size: 36px;
   font-weight: 500;
   line-height: 1.625;
   text-align: center;
   border-radius: 2px;
+  font-size: 18px;
 }
 .btn-blue {
   color: #fff;
   background: #111b47;
+  padding-block: 3.375px;
 }
 .btn-border {
   color: #091133;
   border: 2px solid #091133;
+  padding-block: 1.375px;
 }
 .introduce__btn.btn.btn-blue {
   margin-inline-end: 30px;
@@ -151,6 +151,7 @@ h1 {
 }
 .cards-design__items img {
   margin-block-end: 14px;
+  max-width: 36px;
 }
 .cards-design__items h3 {
   font-size: 16px;
@@ -166,8 +167,10 @@ h1 {
   line-height: 1.5;
 }
 .custom {
-  max-width: 520px;
   font-family: 'Manrope', sans-serif;
+}
+.custom__mini-container {
+  max-width: 520px;
 }
 .custom h2 {
   padding-block: 30px;

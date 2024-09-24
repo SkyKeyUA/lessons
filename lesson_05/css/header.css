@@ -1,4 +1,14 @@
 .header {
   text-align: center;
-  margin-block: 20px;
+  padding-block: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #1c0f3d;
+  text-align: center;
+}
+.header__container div {
+  margin-block-end: 20px;
 }
