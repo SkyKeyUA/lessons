@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  color: #fff;
+  background: #141414;
+}
+.wrapper {
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+[class*='__container'] {
+  max-width: 1616px;
+  padding: 0px 10px;
+  margin-inline: auto;
+}

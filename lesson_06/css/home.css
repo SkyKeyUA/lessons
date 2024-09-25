@@ -1,0 +1,136 @@
+@import url('style.css');
+
+.streaming {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5; /* 87px */
+  text-align: center;
+  padding-block: 50px;
+}
+.streaming__bg {
+  min-height: 860px;
+  background-position: center, center top, center bottom, center;
+  background-repeat: no-repeat;
+  background-size: 470px, cover, cover, cover;
+  /* background-attachment: fixed; */
+}
+
+.streaming__body {
+  max-width: 1096px;
+  margin-inline: auto;
+  margin-block-start: -64px;
+}
+.streaming__body h1 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-block-end: 14px;
+}
+.streaming__body div {
+  color: #999;
+  margin-block-end: 50px;
+}
+.streaming__body a {
+  border-radius: 8px;
+  background: #e50000;
+  font-weight: 600;
+  padding-inline: 25px;
+  padding-block: 18.5px;
+  /* display: inline-block;
+  border-top: 10px solid transparent;
+  border-left: 15px solid #fff;
+  border-bottom: 10px solid transparent;
+  vertical-align: middle;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 8px; */
+}
+
+.streaming__body a svg {
+  vertical-align: middle;
+  margin-inline-end: 8px;
+}
+.features {
+  background: #fdf0e9;
+  color: #391400;
+  font-family: 'Epilogue', sans-serif;
+  padding-block: 50px;
+}
+.features__container {
+  max-width: 1190px;
+  min-height: 551px;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.features__body {
+  padding-block-start: 77px;
+  max-width: 470px;
+}
+.features__info {
+  color: #ef6d58;
+  line-height: 2; /* 200% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-block-end: 20px;
+}
+.features__title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.143; /* 114.286% */
+  letter-spacing: -1px;
+  margin-block-end: 26px;
+}
+.features__text {
+  font-size: 20px;
+  line-height: 1.6; /* 160% */
+  margin-block-end: 24px;
+}
+.features__items {
+  color: rgba(57, 20, 0, 0.64);
+  line-height: 2; /* 200% */
+}
+.features__items li {
+  background: url('../img/check.svg') 0px / 32px no-repeat;
+  min-height: 32px;
+  padding-inline-start: 48px;
+  margin-block-end: 16px;
+}
+.custom {
+  padding-block: 50px;
+}
+.custom h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-block-end: 20px;
+}
+.custom h2 + div {
+  margin-block-end: 30px;
+}
+.custom__container {
+}
+.custom__border {
+  border-block: 5px dashed #9b1717;
+  border-inline: 7px dotted #57581a;
+  border-radius: 16px;
+}
+.custom__outline {
+  outline-color: #e50000;
+  outline-style: double;
+  outline-width: 15px;
+  outline-offset: 10px;
+}
+.custom__box-shadow {
+  box-shadow: -5px -5px 30px #e50000, 5px 5px 30px #7ee500, 0px 0px 30px #e5d200;
+}
+.custom__opacity {
+  opacity: 0.5;
+}
+.custom__visibility {
+  visibility: hidden;
+}
+.custom__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #7ee500;
+  border-radius: 50%;
+}
