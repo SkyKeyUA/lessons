@@ -669,6 +669,7 @@ div:nth-of-type(13):hover {
   margin-block-end: 74px;
   display: block;
   margin-inline: auto;
+  max-width: 970px;
 }
 .mini-container h2,
 .mini-container h3,
