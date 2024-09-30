@@ -1,0 +1,35 @@
+.custom {
+  line-height: 1.5;
+  margin-block-end: 20px;
+  font-size: 18px;
+}
+.custom__container {
+  max-width: 900px;
+}
+
+.custom__items li {
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+}
+.custom__items li {
+  border-block-end: 2px solid transparent;
+}
+.custom__items li:first-child {
+  border-block-end: 2px solid red;
+}
+.custom__items li:last-child {
+  border-block-end: 2px solid green;
+}
+.custom__items li:not(:last-child) {
+  margin-inline-end: 30px;
+}
+.custom__items li a:hover {
+  color: #b1aaaa;
+}
+.custom__items li a:active {
+  color: #6a6767;
+}
+.custom__items li a:focus-visible {
+  background: green;
+}
