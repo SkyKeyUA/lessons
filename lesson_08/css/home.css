@@ -1,0 +1,111 @@
+@import url('style.css');
+
+.custom {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.custom__container {
+  max-width: 1190px;
+}
+.custom__container div > svg,
+.custom__container div > img,
+.custom__container div > span,
+.custom__container div:has(picture) img {
+  vertical-align: middle;
+}
+.custom__container > *:not(:last-child) {
+  margin-block-end: 40px;
+}
+.custom__container > div div:not(:has(svg)):not(:last-child) {
+  margin-block-end: 20px;
+}
+.custom__container > * {
+  font-size: 0;
+}
+
+.custom__container > * div {
+  font-size: 32px;
+}
+.custom__container > * span {
+  font-size: 24px;
+}
+
+.custom__container div div svg,
+.custom__container > div:nth-of-type(1) svg {
+  max-width: 48px;
+}
+.custom__container div:nth-of-type(3) div,
+.custom__container div:nth-of-type(4) div {
+  width: 112px;
+  height: 112px;
+}
+.custom__container div:nth-of-type(3) div,
+.custom__container div:nth-of-type(4) div,
+.custom__container div:nth-of-type(15) div,
+.custom__container div:nth-of-type(16) div,
+.custom__container div:nth-of-type(17) div {
+  background-color: #ef6c57;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0;
+}
+.custom__container div:nth-of-type(3) div {
+  padding-block: 32px;
+}
+.custom__container div img,
+.custom__container div div:has(svg),
+.custom__container > div > svg {
+  margin-inline-end: 20px;
+}
+.custom__container div:nth-of-type(4) div {
+  padding-block: 36.5px;
+}
+.custom__container div:has(div) img {
+  border-radius: 8px;
+  max-width: 400px;
+}
+.custom__container div:nth-of-type(6) div {
+  display: inline-block;
+  font-size: 0;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  padding-block: 59px;
+}
+.custom__container div:nth-of-type(6) svg {
+  max-width: 21px;
+}
+.custom__container div:nth-of-type(12) svg {
+  max-width: 148px;
+}
+.custom__container div:nth-of-type(13) svg {
+  max-width: 434px;
+}
+.custom__container div:nth-of-type(14) svg {
+  max-width: 282px;
+}
+.custom__container div:nth-of-type(15) div,
+.custom__container div:nth-of-type(16) div,
+.custom__container div:nth-of-type(17) div {
+  width: 48px;
+  height: 48px;
+}
+.custom__container div:nth-of-type(15) svg {
+  max-width: 10px;
+}
+.custom__container div:nth-of-type(15) svg,
+.custom__container div:nth-of-type(17) svg {
+  padding-block: 16px;
+}
+.custom__container div:nth-of-type(16) svg {
+  padding-block: 17.5px;
+}
+.custom__container div:nth-of-type(16) svg,
+.custom__container div:nth-of-type(17) svg {
+  max-width: 16px;
+}
