@@ -1,0 +1,317 @@
+@import url('style.css');
+
+.custom {
+  margin-block-end: 50px;
+}
+.custom h2 {
+  font-size: 20px;
+}
+.custom__container {
+}
+.custom__cards {
+  margin-block-end: 100px;
+  font-size: 0;
+  margin-inline: -30px;
+}
+.custom__card {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 400px;
+  padding: 30px;
+}
+.custom__title {
+  margin-block-end: 30px;
+}
+.custom__items,
+.custom__span {
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.custom__item {
+  padding: 10px;
+  height: 300px;
+  background-color: #7a956b;
+  transition: all 0.8s ease 0s;
+}
+.custom__card:first-of-type .custom__item {
+  transform: translate(-10%, 10%);
+  /* transform: translate(-30px, 30px) */
+}
+.custom__span {
+  width: 300px;
+  padding: 10px;
+  transform: translate(100px, 1000px);
+}
+.custom__card:nth-of-type(2) .custom__items:hover .custom__item {
+  transform: scale(0.5);
+}
+.custom__card:nth-of-type(3) .custom__items:hover .custom__item {
+  transform: rotate(135deg);
+}
+.custom__card:nth-of-type(4) .custom__items:hover .custom__item {
+  transform: skew(-30deg, -10deg);
+}
+.custom__card:nth-of-type(5) .custom__items:hover .custom__item {
+  transform: matrix(0.5, 1, 1, 1, 1, 2);
+}
+.custom__card:nth-of-type(6) .custom__items:hover .custom__item {
+  transform: translate(20px, 20px) scale(0.5) rotate(-45deg) skew(-30deg);
+}
+.custom__card:nth-of-type(7) .custom__items:hover .custom__item {
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+.custom__card:nth-of-type(8) .custom__items {
+  perspective-origin: bottom;
+  perspective: 400px;
+}
+.custom__card:nth-of-type(8) .custom__items:hover .custom__item {
+  transform: rotateX(45deg);
+}
+.custom__card:nth-of-type(9) .custom__items {
+  transform-style: preserve-3d;
+  perspective: 400px;
+}
+.custom__card:nth-of-type(9) .custom__items:hover .custom__item {
+  transform: rotateX(80deg);
+}
+.custom__card:nth-of-type(10) .custom__items {
+  perspective: 400px;
+}
+.custom__card:nth-of-type(10) .custom__items:hover .custom__item {
+  transform: translate3D(20px, 20px, 30px) scale3D(0.25, 0.5, 2) rotate3d(50, 50, 200, 50deg);
+}
+.custom__card:nth-of-type(11) .custom__items {
+  perspective: 400px;
+}
+.custom__card:nth-of-type(11) .custom__items:hover .custom__item {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.ship {
+  padding-block: 100px;
+  background: linear-gradient(0deg, #182a5e 0%, #426ff4 100%);
+}
+.ship__container {
+}
+.ship__picture {
+  height: 800px;
+}
+.ship {
+}
+.ship__container {
+  max-width: 1920px;
+}
+.ship__picture {
+  position: relative;
+}
+.ship__body {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  height: 500px;
+  width: 925px;
+  transform: translate(-50%, 0px);
+  transition: all 0.5s ease 0s;
+}
+.ship__body:hover .ship__sail:nth-of-type(1),
+.ship__body:hover .ship__sail:nth-of-type(5) {
+  height: 60px;
+}
+.ship__body:hover .ship__sail:nth-of-type(2),
+.ship__body:hover .ship__sail:nth-of-type(3),
+.ship__body:hover .ship__sail:nth-of-type(6) {
+  height: 90px;
+}
+.ship__body:hover .ship__sail:nth-of-type(4) {
+  height: 120px;
+}
+.ship__body:hover .ship__gunport span span {
+  transform: translateY(-100%);
+}
+.ship__body:hover .ship__gunport > span {
+  background: #645c4b;
+}
+.ship__bow,
+.ship__decks,
+.ship__stern {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    #8b5a2b 0%,
+    #8b5a2b 15%,
+    #000 16%,
+    #8b5a2b 17%,
+    #8b5a2b 30%,
+    #000 31%,
+    #8b5a2b 32%,
+    #8b5a2b 45%,
+    #000 46%,
+    #8b5a2b 47%,
+    #8b5a2b 60%,
+    #000 61%,
+    #8b5a2b 62%,
+    #5d3a06 100%
+  );
+  height: 200px;
+}
+.ship__bow {
+  left: 0;
+  border-radius: 0px 0px 0% 50% / 0px 0px 0% 100%;
+  width: 300px;
+}
+.ship__decks {
+  left: 200px;
+  width: 600px;
+}
+.ship__bow::before {
+  content: '';
+  position: absolute;
+  width: 78px;
+  height: 10px;
+  top: -23px;
+  left: -46px;
+  transform: rotate(61deg);
+  background: #8b5a2b;
+}
+.ship__bow::after,
+.ship__decks::before,
+.ship__stern::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  background: linear-gradient(#8b5a2b 0%, #8b5a2b 99%, #000 100%);
+}
+.ship__bow::after {
+  height: 200px;
+  top: -200px;
+  right: 50px;
+}
+.ship__decks::before {
+  height: 300px;
+  top: -300px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+.ship__decks::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(#8b5a2b 0%, #8b5a2b 99%, #000 100%);
+  border-radius: 6px 6px 50% 50% / 6px 6px 41% 41%;
+  top: -300px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+.ship__stern {
+  left: 700px;
+  width: 200px;
+  transform: skewX(-15deg);
+}
+.ship__stern::before {
+  height: 200px;
+  top: -200px;
+  left: 0px;
+  transform: skewX(15deg);
+}
+.ship__hold {
+}
+.ship__deck {
+  position: absolute;
+  z-index: 1;
+  left: -100px;
+  height: 20px;
+  width: 800px;
+  font-size: 0;
+  margin-inline: -10px;
+}
+.ship__deck:nth-of-type(1) {
+  top: 37px;
+}
+.ship__deck:nth-of-type(2) {
+  top: 67px;
+}
+.ship__deck:nth-of-type(3) {
+  top: 97px;
+}
+.ship__gunport {
+  position: relative;
+  display: inline-block;
+  padding-inline: 10px;
+  height: 100%;
+}
+.ship__gunport > span {
+  display: inline-block;
+  border: 1px solid #000;
+  overflow: hidden;
+  width: 20px;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+}
+.ship__gunport span span {
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: #8b5a2b;
+}
+.ship__gunport > span::after {
+  content: '';
+  background: #000;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid #3f2b0e;
+  z-index: 1;
+}
+.ship__sails {
+}
+.ship__sail {
+  position: absolute;
+  background: #fff;
+  height: 10px;
+  transition: all 0.5s ease 0s;
+  border-top: 5px solid #8b5a2b;
+  border-radius: 0px 0px 8px 8px;
+}
+.ship__sail:nth-of-type(1),
+.ship__sail:nth-of-type(5) {
+  width: 80px;
+}
+.ship__sail:nth-of-type(2),
+.ship__sail:nth-of-type(3),
+.ship__sail:nth-of-type(6) {
+  width: 125px;
+}
+.ship__sail:nth-of-type(1) {
+  top: 120px;
+  left: 194px;
+}
+.ship__sail:nth-of-type(2) {
+  top: 200px;
+  left: 173px;
+}
+.ship__sail:nth-of-type(3) {
+  top: 60px;
+  left: 437px;
+}
+.ship__sail:nth-of-type(4) {
+  top: 170px;
+  left: 415px;
+  width: 165px;
+}
+.ship__sail:nth-of-type(5) {
+  top: 120px;
+  right: 117px;
+}
+.ship__sail:nth-of-type(6) {
+  top: 200px;
+  right: 95px;
+}
