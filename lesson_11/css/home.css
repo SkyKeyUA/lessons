@@ -88,6 +88,92 @@
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
+.cube {
+  padding-block: 100px;
+}
+.cube__container {
+  max-width: 1400px;
+}
+.cube__cards {
+  font-size: 0;
+  margin-inline: -20px;
+}
+.cube__card {
+  display: inline-block;
+  width: 350px;
+  padding: 20px;
+  vertical-align: top;
+}
+.cube__column {
+  border: 1px solid hsl(40, 2%, 63%);
+  padding-inline: 40px;
+  padding-block: 40px 20px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+.cube__column > p {
+  font-size: 20px;
+  text-align: center;
+}
+.cube__card:nth-of-type(1) .cube__column:hover .cube__body {
+  transform: translate3d(-140px, -40px, 150px);
+}
+.cube__card:nth-of-type(2) .cube__column:hover .cube__body {
+  transform: rotate3d(5, 4, 3, 180deg);
+}
+.cube__card:nth-of-type(3) .cube__column {
+  position: relative;
+  z-index: 1;
+}
+.cube__card:nth-of-type(3) .cube__column:hover .cube__body {
+  transform: scale3D(2, 2, 5);
+}
+.cube__card:nth-of-type(4) .cube__column:hover .cube__body {
+  transform: rotateX(320deg);
+}
+.cube__card:nth-of-type(5) .cube__column:hover .cube__body {
+  transform: rotateY(320deg);
+}
+.cube__card:nth-of-type(6) .cube__column:hover .cube__body {
+  transform: translate3d(-200px, -200px, 400px) rotate3d(1, 1, 7, 320deg);
+}
+.cube__body {
+  position: relative;
+  height: 228px;
+  line-height: 228px;
+  transform-style: preserve-3d;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  transition: all 1s ease 0s;
+  font-size: 96px;
+  margin-block-end: 30px;
+}
+.cube__side {
+  position: absolute;
+  inset: 0;
+  background: rgb(179 179 179 / 80%);
+  box-shadow: inset 0 0 22.375px hsl(0deg 0% 0%);
+}
+.cube__side--top {
+  transform: translateY(-113.5px) rotateX(90deg);
+}
+.cube__side--right {
+  transform: translateX(113.5px) rotateY(90deg);
+}
+.cube__side--bottom {
+  transform: translateY(113.5px) rotateX(90deg);
+}
+.cube__side--left {
+  transform: translateX(-113.5px) rotateY(90deg);
+}
+.cube__side--front {
+  transform: translateZ(113.5px);
+}
+.cube__side--back {
+  transform: translateZ(-113.5px);
+}
 .ship {
   padding-block: 100px;
   background: linear-gradient(0deg, #182a5e 0%, #426ff4 100%);
