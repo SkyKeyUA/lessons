@@ -181,6 +181,7 @@ h3 {
   left: 20px;
 }
 .studio {
+  padding-block: 100px;
 }
 .studio__container {
   font-size: 0;
@@ -189,8 +190,8 @@ h3 {
 .studio__left {
   position: relative;
   display: inline-block;
-  width: 51.2%;
-  padding-inline-end: 87px;
+  width: 43.8%;
+  margin-inline-end: 7.5%;
   vertical-align: middle;
 }
 .studio__star {
@@ -283,20 +284,9 @@ h3 {
 }
 .studio__right {
   display: inline-block;
-  width: 48.8%;
+  width: 48.7%;
   position: relative;
   vertical-align: top;
-}
-.studio__right::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #b550f8;
-  width: 246px;
-  height: 305px;
-  border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
-  z-index: 1;
 }
 .studio__right::after {
   content: '';
@@ -307,13 +297,19 @@ h3 {
   height: 370px;
   border-radius: 50%;
   background: #32334c;
+  z-index: -1;
 }
-.studio__laptop {
+.studio__device {
+  background: #b550f8;
+  width: 246px;
+  height: 305px;
+  border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
+}
+.studio__device img {
   position: absolute;
   top: 24px;
   left: 21px;
   max-width: 255px;
-  z-index: 2;
 }
 .studio__stars {
   position: absolute;
@@ -323,15 +319,13 @@ h3 {
   height: 112px;
   background: #ef6d58;
   border-radius: 50%;
-  z-index: 1;
 }
 .studio__stars svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 42px;
-  height: 56px;
+  max-width: 42px;
 }
 .studio__designer {
   position: absolute;
@@ -341,43 +335,36 @@ h3 {
   width: 246px;
   height: 305px;
   border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
-  z-index: 1;
 }
 .studio__designer img {
   max-width: 246px;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0px);
+  left: 0;
 }
 .studio__skeleton {
   position: absolute;
   top: 431px;
   left: 56px;
-  z-index: 1;
+  max-width: 214px;
 }
 .studio__path {
   position: absolute;
   top: 80px;
   right: 0;
-  width: 112px;
-  height: 82px;
-  z-index: 1;
+  max-width: 112px;
 }
 .studio__arrow-spring {
   position: absolute;
   top: 341px;
   left: 0;
-  width: 142px;
-  height: 73px;
-  z-index: 1;
+  max-width: 142px;
 }
 .studio__arrow-line {
   position: absolute;
   top: 550px;
   right: 163px;
-  width: 94px;
-  height: 35px;
+  max-width: 94px;
   z-index: 1;
 }
 .portfolio {
@@ -428,14 +415,26 @@ h3 {
 }
 .projects__column > a {
   position: relative;
+  transition: all 0.5s ease 0s;
 }
-.projects__column > a:hover {
-  opacity: 0.8;
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+.projects__column > a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3181;
+  background: #5c2000;
+  transition: all 0.5s ease 0s;
 }
-.projects__column > a:active {
+.projects__column > a:hover::before {
   opacity: 1;
-  box-shadow: inherit;
+  background: inherit;
+}
+.projects__column > a:active::before {
+  opacity: 0.3181;
+  background: #5c2000;
 }
 .projects__image {
   max-width: 448px;
@@ -443,7 +442,7 @@ h3 {
 .projects__body {
   position: absolute;
   bottom: 51px;
-  left: 48px;
+  inset-inline: 48px;
 }
 .projects__title {
   display: inline-block;
