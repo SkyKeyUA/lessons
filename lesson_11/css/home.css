@@ -174,6 +174,143 @@
 .cube__side--back {
   transform: translateZ(-113.5px);
 }
+.example {
+  padding-block: 100px;
+}
+.example h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-block-end: 50px;
+}
+.example__container {
+}
+.example__cards {
+  font-size: 0;
+  margin-inline: -20px;
+}
+.example__card {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px;
+  width: 25%;
+}
+.example__body {
+  border: 2px solid #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.example__body > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.example__cards .example__card:nth-of-type(1) .example__body > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  opacity: 0;
+  background-color: #0000008d;
+  transition: all 0.5s;
+}
+.example__cards .example__card:nth-of-type(1) .example__body:hover > div {
+  transform: translateY(0);
+  opacity: 1;
+}
+.example__cards .example__card:nth-of-type(1) .example__body div div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  border-radius: 16px;
+  font-weight: 700;
+  padding: 20px;
+  background: #426ff4;
+  transition: background 0.3s ease 0s;
+}
+.example__cards .example__card:nth-of-type(1) .example__body div div:hover {
+  background: #6c8df0;
+}
+.example__cards .example__card:nth-of-type(1) .example__body div div:active {
+  background: #426ff4;
+}
+
+.example__zoom {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 40%;
+  height: 40%;
+  border: 3px solid #182a5e;
+  transform: translateX(140%);
+  transition: transform 0.5s ease 0s;
+  border-radius: 16px;
+}
+.example__zoom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.example__cards .example__card:nth-of-type(2) .example__body:hover .example__zoom {
+  transform: translateX(0);
+}
+.example__name {
+  position: absolute;
+  bottom: 10%;
+  inset-inline: 10%;
+}
+.example__name span {
+  background: #182a5e;
+  padding: 10px;
+  border-radius: 16px;
+  transition: background 0.3s ease 0s;
+}
+.example__name span:hover {
+  background: #3f5493;
+}
+.example__front,
+.example__back {
+  position: absolute;
+  inset: 0;
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  backface-visibility: hidden;
+}
+.example__back div {
+  margin-block-end: 10px;
+}
+.example__back p {
+  font-size: 20px;
+}
+.example__cards .example__card:nth-of-type(3) .example__body:hover .example__front {
+  transform: rotateY(180deg);
+}
+.example__cards .example__card:nth-of-type(3) .example__body:hover .example__back {
+  transform: rotateY(0deg);
+}
+.example__inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  inset-inline: 10%;
+  background: #182a5e;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 16px;
+}
+.example__back {
+  transform: rotateY(180deg);
+  background-color: #09ab9351;
+}
 .ship {
   padding-block: 100px;
   background: linear-gradient(0deg, #182a5e 0%, #426ff4 100%);
