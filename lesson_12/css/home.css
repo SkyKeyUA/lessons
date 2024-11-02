@@ -1,0 +1,371 @@
+@import url('style.css');
+
+.animation {
+  padding-block: 100px;
+  background: linear-gradient(0deg, #182a5e 0%, #182a5e 40%, #dce5ff 60%, #c5c5c5 100%);
+  position: relative;
+  overflow: hidden;
+}
+.animation__picture {
+  height: 800px;
+  position: relative;
+}
+.animation__ship {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  height: 500px;
+  width: 925px;
+  transform: translate(-50%, 0px) rotateY(180deg);
+  transition: all 0.5s ease 0s;
+  animation-name: left-right;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.animation__ship .ship__sail span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  animation-name: sails-height;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.ship__bow,
+.ship__decks,
+.ship__stern {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    #8b5a2b 0%,
+    #8b5a2b 15%,
+    #000 16%,
+    #8b5a2b 17%,
+    #8b5a2b 30%,
+    #000 31%,
+    #8b5a2b 32%,
+    #8b5a2b 45%,
+    #000 46%,
+    #8b5a2b 47%,
+    #8b5a2b 60%,
+    #000 61%,
+    rgb(139, 90, 43) 62%,
+    rgb(139, 90, 43, 0.5) 70%,
+    rgb(93, 58, 6, 0) 100%
+  );
+  height: 200px;
+}
+.ship__bow {
+  left: 0;
+  border-radius: 0px 0px 0% 50% / 0px 0px 0% 100%;
+  width: 300px;
+}
+.ship__decks {
+  left: 300px;
+  width: 500px;
+}
+.ship__bow::before {
+  content: '';
+  position: absolute;
+  width: 78px;
+  height: 10px;
+  top: -23px;
+  left: -46px;
+  transform: rotate(61deg);
+  background: #8b5a2b;
+}
+.ship__bow::after,
+.ship__decks::before,
+.ship__stern::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  background: linear-gradient(#8b5a2b 0%, #8b5a2b 99%, #000 100%);
+}
+.ship__bow::after {
+  height: 200px;
+  top: -200px;
+  right: 50px;
+}
+.ship__decks::before {
+  height: 300px;
+  top: -300px;
+  left: 37%;
+}
+.ship__decks::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(#8b5a2b 0%, #8b5a2b 99%, #000 100%);
+  border-radius: 6px 6px 50% 50% / 6px 6px 41% 41%;
+  top: -300px;
+  left: 34%;
+}
+.ship__stern {
+  left: 800px;
+  width: 200px;
+}
+.ship__stern::after {
+  height: 200px;
+  top: -200px;
+  left: -60px;
+}
+.ship__stern::before {
+  content: '';
+  position: absolute;
+  left: 140px;
+  top: 0;
+  height: 200px;
+  width: 100px;
+  z-index: 1;
+  background: #182a5e;
+  transform: skewX(-15deg);
+}
+.ship__hold {
+}
+.ship__deck {
+  position: absolute;
+  z-index: 1;
+  left: -200px;
+  height: 20px;
+  width: 800px;
+  font-size: 0;
+  margin-inline: -10px;
+}
+.ship__deck:nth-of-type(1) {
+  top: 37px;
+}
+.ship__deck:nth-of-type(2) {
+  top: 67px;
+}
+.ship__deck:nth-of-type(3) {
+  top: 97px;
+}
+.ship__gunport {
+  position: relative;
+  display: inline-block;
+  padding-inline: 10px;
+  height: 100%;
+}
+.ship__gunport > span {
+  display: inline-block;
+  border: 1px solid #000;
+  overflow: hidden;
+  width: 20px;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+  background: #645c4b;
+}
+.ship__gunport span span {
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: #8b5a2b;
+}
+.animation__ship .ship__gunport span span {
+  animation-name: toggle-gunport;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.ship__gunport > span::after {
+  content: '';
+  background: #000;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid #3f2b0e;
+  z-index: 1;
+}
+.ship__sail {
+  position: absolute;
+  height: 10px;
+  transition: all 0.5s ease 0s;
+  border-top: 5px solid #8b5a2b;
+}
+.ship__sail:nth-of-type(1),
+.ship__sail:nth-of-type(5) {
+  width: 80px;
+  height: 60px;
+}
+.ship__sail:nth-of-type(2),
+.ship__sail:nth-of-type(3),
+.ship__sail:nth-of-type(6) {
+  width: 125px;
+  height: 90px;
+}
+.ship__sail:nth-of-type(1) {
+  top: 120px;
+  left: 194px;
+}
+.ship__sail:nth-of-type(2) {
+  top: 200px;
+  left: 173px;
+}
+.ship__sail:nth-of-type(3) {
+  top: 60px;
+  left: 437px;
+}
+.ship__sail:nth-of-type(4) {
+  top: 170px;
+  left: 415px;
+  width: 165px;
+  height: 120px;
+}
+.ship__sail:nth-of-type(5) {
+  top: 120px;
+  right: 130px;
+}
+.ship__sail:nth-of-type(6) {
+  top: 200px;
+  right: 110px;
+}
+
+.animation__rain {
+}
+.rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+.rain__drop {
+  display: inline-block;
+  width: 4px;
+  height: 30px;
+  margin: 20px;
+  background: linear-gradient(rgb(255, 255, 255, 0) 0%, #fff 100%);
+  animation-name: rain-drops;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+.rain__drop:nth-of-type(2n) {
+  animation-duration: 8s;
+}
+.rain__drop:nth-of-type(3n) {
+  animation-duration: 11s;
+}
+.rain__drop:nth-of-type(4n) {
+  animation-duration: 13s;
+}
+.rain__drop:nth-of-type(5n) {
+  animation-duration: 15s;
+}
+.phrase {
+  position: absolute;
+  top: 100px;
+  inset-inline: 0;
+  text-align: center;
+  font-size: 92px;
+  color: #000;
+}
+.phrase span {
+  display: inline-block;
+  animation-name: show-text;
+  text-shadow: 1px 1px 5px #4e4a4a;
+}
+.phrase span:nth-of-type(1) {
+  animation-duration: 1s;
+}
+.phrase span:nth-of-type(2) {
+  animation-duration: 1.3s;
+}
+.phrase span:nth-of-type(3) {
+  animation-duration: 1.6s;
+}
+.phrase span:nth-of-type(4) {
+  animation-duration: 1.9s;
+}
+.phrase span:nth-of-type(5) {
+  animation-duration: 2.2s;
+}
+.phrase span:nth-of-type(6) {
+  animation-duration: 2.5s;
+}
+.phrase span:nth-of-type(7) {
+  animation-duration: 2.8s;
+}
+.phrase span:nth-of-type(8) {
+  animation-duration: 3.1s;
+}
+.phrase span:nth-of-type(9) {
+  animation-duration: 3.4s;
+}
+.phrase span:nth-of-type(10) {
+  animation-duration: 3.7s;
+}
+.phrase span:nth-of-type(11) {
+  animation-duration: 4s;
+}
+@keyframes rain-drops {
+  0% {
+    transform: translateY(-1500px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px);
+    opacity: 0.2;
+  }
+}
+@keyframes left-right {
+  0%,
+  25% {
+    transform: translateX(-250%) rotateY(180deg);
+  }
+  25%,
+  75% {
+    transform: translateX(-50%) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(250%) rotateY(180deg);
+  }
+}
+@keyframes toggle-gunport {
+  0%,
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes show-text {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes sails-height {
+  0%,
+  25% {
+    height: 100%;
+  }
+  25%,
+  50% {
+    height: 10px;
+  }
+  100% {
+    height: 100%;
+  }
+}
