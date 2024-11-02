@@ -326,7 +326,7 @@
     transform: translateX(-250%) rotateY(180deg);
   }
   25%,
-  75% {
+  60% {
     transform: translateX(-50%) rotateY(180deg);
   }
   100% {
