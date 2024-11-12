@@ -41,7 +41,7 @@
               <div>
                 <input id="input-03" name="location" placeholder="Location" type="text" />
               </div>
-              <div>
+              <div class="form-project__line">
                 <div>
                   <input id="input-04" name="budget" required placeholder="Budget*" type="text" />
                 </div>
@@ -49,7 +49,7 @@
                   <input id="input-05" name="subject" required placeholder="Subject*" type="text" />
                 </div>
               </div>
-              <div>
+              <div class="form-project__textarea">
                 <textarea name="form[]" required placeholder="Message*"></textarea>
               </div>
               <button type="submit">
@@ -69,7 +69,7 @@
               <form class="form-movie__form" enctype="multipart/form-data" action="#">
                 <div class="form-movie__line">
                   <div>
-                    <div><label class="form-movie__label" for="input-06">First Name</label></div>
+                    <label class="form-movie__label" for="input-06">First Name</label>
                     <input
                       placeholder="Enter First Name"
                       id="input-06"
@@ -79,7 +79,7 @@
                     />
                   </div>
                   <div>
-                    <div><label class="form-movie__label" for="input-07">Last Name</label></div>
+                    <label class="form-movie__label" for="input-07">Last Name</label>
                     <input
                       placeholder="Enter Last Name"
                       id="input-07"
@@ -91,7 +91,7 @@
                 </div>
                 <div class="form-movie__line">
                   <div>
-                    <div><label class="form-movie__label" for="input-08">Email</label></div>
+                    <label class="form-movie__label" for="input-08">Email</label>
                     <input
                       placeholder="Enter your Email"
                       id="input-08"
@@ -101,7 +101,7 @@
                     />
                   </div>
                   <div>
-                    <div><label class="form-movie__label" for="input-09">Phone Number</label></div>
+                    <label class="form-movie__label" for="input-09">Phone Number</label>
                     <input
                       placeholder="Enter Phone Number"
                       id="input-09"
@@ -111,8 +111,8 @@
                     />
                   </div>
                 </div>
-                <div class="form-movie__line">
-                  <div><label for="form__message">Message</label></div>
+                <div class="form-movie__textarea">
+                  <label class="form-movie__label" for="form__message">Message</label>
                   <textarea
                     placeholder="Enter your Message"
                     name="form__message"
@@ -120,7 +120,7 @@
                   ></textarea>
                 </div>
                 <div class="form-movie__line">
-                  <div>
+                  <div class="form-movie__checkbox">
                     <input value="yes" required id="form__checkbox" checked type="checkbox" />
                     <label for="form__checkbox">I agree with Terms of Use and Privacy Policy</label>
                   </div>

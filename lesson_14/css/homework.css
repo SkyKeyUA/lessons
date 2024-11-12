@@ -17,7 +17,6 @@
 }
 
 .form-project__form > div input,
-.form-project__form > div:has(div:nth-of-type(2)) div input,
 .form-project__form > div textarea {
   color: #a53dff;
   padding-block-end: 14px;
@@ -39,25 +38,23 @@
 }
 .form-project__form > div input:hover,
 .form-project__form > div input:focus,
-.form-project__form > div:has(div:nth-of-type(2)) div input:hover,
-.form-project__form > div:has(div:nth-of-type(2)) div input:focus,
 .form-project__form > div textarea:hover,
 .form-project__form > div textarea:focus {
   border-bottom: 1px solid #a53dff;
 }
-.form-project__form > div:has(div:nth-of-type(2)) {
+.form-project__line {
   border: inherit;
   display: flex;
   padding-block-end: 0;
 }
-.form-project__form > div:has(div:nth-of-type(2)) div:nth-child(1) {
+.form-project__line div:nth-child(1) {
   margin-inline-end: 24px;
   flex: 0 1 200px;
 }
-.form-project__form > div:has(div:nth-of-type(2)) div:nth-child(2) {
+.form-project__line div:nth-child(2) {
   flex: 1 1;
 }
-.form-project__form > div:has(textarea) {
+.form-project__textarea {
   padding-block-end: 0;
   font-size: 0;
 }
@@ -123,22 +120,23 @@ textarea {
   flex-direction: column;
   gap: 40px;
 }
-.form-movie__form label {
+.form-movie__label {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5; /* 24px */
   cursor: pointer;
+  margin-block-end: 12px;
+  display: inline-block;
 }
-.form-movie__form > div:not(:has(textarea)) {
+
+.form-movie__line {
   display: flex;
   justify-content: space-between;
-}
-.form-movie__form > div:has(div:nth-of-type(2)) {
   gap: 20px;
 }
-.form-movie__form > div:has(div:nth-of-type(2)) input,
-.form-movie__form > div:has(textarea) textarea {
+.form-movie__line input,
+.form-movie__textarea textarea {
   border-radius: 6px;
   border: 1px solid #262626;
   background: #141414;
@@ -146,33 +144,29 @@ textarea {
   font-size: 14px;
   line-height: 1.5; /* 21px */
 }
-.form-movie__form > div:has(textarea) textarea {
+.form-movie__textarea textarea {
   min-height: 129px;
 }
-.form-movie__form > div:has(div:nth-of-type(2)) input::placeholder,
-.form-movie__form > div:has(textarea) textarea::placeholder {
+.form-movie__line input::placeholder,
+.form-movie__textarea textarea::placeholder {
   color: #999;
   transition: color 0.3s ease;
 }
-.form-movie__form > div:has(div:nth-of-type(2)) input:hover::placeholder,
-.form-movie__form > div:has(textarea) textarea:hover::placeholder,
-.form-movie__form > div:has(div:nth-of-type(2)) input:focus::placeholder,
-.form-movie__form > div:has(textarea) textarea:focus::placeholder {
+.form-movie__line input:hover::placeholder,
+.form-movie__textarea textarea:hover::placeholder,
+.form-movie__line input:focus::placeholder,
+.form-movie__textarea textarea:focus::placeholder {
   color: #fff;
 }
-.form-movie__form > div:has(div:nth-of-type(2)) > div {
+.form-movie__line > div {
   flex: 1 1;
 }
-.form-movie__form > div:has(div:nth-of-type(2)) > div > div:has(label),
-.form-movie__form > div:has(textarea) > div:has(label) {
-  margin-block-end: 12px;
-}
-.form-movie__form > div > div:has(input[type='checkbox']) {
+.form-movie__checkbox {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.form-movie__form > div > div:has(input[type='checkbox']) input {
+.form-movie__checkbox input {
   appearance: none;
   width: 24px;
   height: 24px;
@@ -180,13 +174,17 @@ textarea {
   border: 1px solid #262626;
   cursor: pointer;
 }
-.form-movie__form > div > div:has(input[type='checkbox']) input:checked {
+.form-movie__checkbox input:checked {
   background: url('../img/icons/check.svg') 0 0 / 100% no-repeat;
 }
 .form-movie__form > div input[type='checkbox'] + label {
   color: #999;
   line-height: 1.5; /* 24px */
   transition: color 0.3s ease;
+  cursor: pointer;
+}
+.form-movie__form > div input[type='checkbox']:focus {
+  border: 1px solid #fff;
 }
 .form-movie__form > div input[type='checkbox'] + label:hover {
   color: #fff;
