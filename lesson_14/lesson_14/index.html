@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Form</title>
+    <!-- <style>
+		h1 {
+
+		}
+	 </style> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="homework.html">HomeWork</a></li>
+            </ul>
+          </nav>
+          <h1>Form</h1>
+        </div>
+      </header>
+      <main class="page">
+        <div class="custom">
+          <div class="custom__container">
+            <form enctype="multipart/form-data" action="#" class="custom__form form">
+              <div class="form__line">
+                <label class="form__label" for="input-01">FirstName*</label>
+                <input
+                  name="first_name"
+                  id="input-01"
+                  placeholder="Write your FirstName*"
+                  required
+                  type="text"
+                />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-02">LastName*</label>
+                <input
+                  name="last_name"
+                  id="input-02"
+                  placeholder="Write your LastName*"
+                  required
+                  type="text"
+                />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-03">Email*</label>
+                <input
+                  name="email"
+                  id="input-03"
+                  placeholder="Write your Email*"
+                  required
+                  type="email"
+                />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-04">Hidden</label>
+                <input value="windows" id="input-04" name="os" type="hidden" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-05">Phone Number</label>
+                <input name="tel" id="input-05" placeholder="Write your Phone number" type="tel" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-06">Number</label>
+                <input name="form[]" id="input-06" placeholder="Number" type="number" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-07">Username*</label>
+                <input
+                  name="username"
+                  id="input-07"
+                  placeholder="Write your Username"
+                  required
+                  type="text"
+                />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-08">Password*</label>
+                <input
+                  name="Password"
+                  id="input-08"
+                  placeholder="Write your Password"
+                  required
+                  type="password"
+                />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-09">Color</label>
+                <input name="color" id="input-09" value="#333333" type="color" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-10">Search</label>
+                <input name="search" id="input-10" type="search" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-11">Date</label>
+                <input name="date" id="input-11" type="date" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="input-12">Range</label>
+                <input name="form[]" value="25" id="input-12" type="range" />
+              </div>
+              <div class="form__line">
+                <div>Checkbox</div>
+                <div>
+                  <label class="form__label" for="check-01">Question 1</label>
+                  <input name="form[]" id="check-01" type="checkbox" />
+                  <label class="form__label" for="check-02">Question 2</label>
+                  <input name="form[]" id="check-02" type="checkbox" />
+                </div>
+              </div>
+              <fieldset>
+                <legend>What do you have in your home?</legend>
+                <div class="form__line">
+                  <div>
+                    <label for="pet-01">Dog?</label>
+                    <input checked id="pet-01" name="pet" value="Dog" type="radio" />
+                  </div>
+                  <div>
+                    <label for="pet-02">Cat?</label>
+                    <input id="pet-02" name="pet" value="Cat" type="radio" />
+                  </div>
+                  <div>
+                    <label for="pet-03">Robot?</label>
+                    <input id="pet-03" name="pet" value="Robot" type="radio" />
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>What would you like to buy in the store today?</legend>
+                <div class="form__line">
+                  <div>
+                    <label for="groceries-01">Carrot?</label>
+                    <input checked id="groceries-01" name="groceries" value="Carrot" type="radio" />
+                  </div>
+                  <div>
+                    <label for="groceries-02">Corn?</label>
+                    <input id="groceries-02" name="groceries" value="Corn" type="radio" />
+                  </div>
+                  <div>
+                    <label for="groceries-03">Potato?</label>
+                    <input id="groceries-03" name="groceries" value="Potato" type="radio" />
+                  </div>
+                </div>
+              </fieldset>
+              <div class="form__line">
+                <label class="form__label" for="file-01">Multiple files + accept</label>
+                <input multiple id="file-01" accept=".jpg, .png" name="form[]" type="file" />
+              </div>
+              <div class="form__line">
+                <label class="form__label" for="file-02">Only one file</label>
+                <input id="file-02" accept=".jpg, .png" name="form[]" type="file" />
+              </div>
+              <div class="form__line">
+                <div>Textarea</div>
+                <textarea name="form[]"></textarea>
+              </div>
+              <div class="form__line">
+                <div>Select</div>
+                <select name="form[select]">
+                  <option value="01">First</option>
+                  <option selected value="02">Second</option>
+                  <option value="03">Third</option>
+                  <option value="04">Fourth</option>
+                </select>
+              </div>
+              <div class="form__line">
+                <div>Button type: button, reset, submit</div>
+                <button type="button">Only button</button>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div>footer</div>
+          <div>Copyright 2024 OLEKSANDR</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
