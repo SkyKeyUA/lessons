@@ -182,7 +182,7 @@ body {
 }
 .row--four .row__reviews {
   gap: 4px;
-  padding: 5px 7px;
+  padding: 5px 6px;
 }
 .row__stars {
   display: flex;
@@ -194,8 +194,6 @@ body {
 .row__star--half path:first-child {
   fill: #e50000;
 }
-.row__star--half {
-}
 @media (min-width: 1440.98px) {
   [class*='__container'] {
     max-width: 1632px;
@@ -203,6 +201,9 @@ body {
   .movies__body {
     padding: 50px;
     gap: 100px;
+  }
+  .movies__body:not(:last-child) {
+    margin-block-end: 170px;
   }
   .movies__label {
     top: -25px;
@@ -280,9 +281,14 @@ body {
     width: 18px;
     height: 17px;
   }
-  .row--four .row__time {
+  .row--four .row__time,
+  .row__seasons {
     gap: 5px;
     padding: 5px 10px 5px 6px;
+  }
+  .row__seasons svg {
+    width: 19.5px;
+    height: 18px;
   }
 }
 @media (min-width: 991.98px) {
@@ -404,6 +410,11 @@ body {
     display: none;
   }
 }
+@media (min-width: 991.98px) and (max-width: 1440.98px) {
+  .movies__body:not(:last-child) {
+    margin-block-end: 138px;
+  }
+}
 @media (min-width: 767.98px) and (max-width: 1440.98px) {
   .section-header__arrows {
     gap: 12px;
@@ -442,6 +453,11 @@ body {
   }
   .row__column {
     padding: 15px;
+  }
+}
+@media (min-width: 479.98px) and (max-width: 991.98px) {
+  .movies__body:not(:last-child) {
+    margin-block-end: 80px;
   }
 }
 @media (min-width: 479.98px) and (max-width: 767.98px) {
@@ -512,7 +528,19 @@ body {
   }
   .row--four .row__time {
     gap: 4px;
-    padding: 6px 10px 6px 6px;
+    padding: 6px 6px 6px 5px;
+  }
+  .row--four .row__time.row__time--padding {
+    padding: 4px 10px 4px 6px;
+  }
+  .row__seasons {
+    gap: 4px;
+    padding: 4px 6px 4px 4px;
+    font-size: 12px;
+  }
+  .row__seasons svg {
+    width: 16.25px;
+    height: 15px;
   }
 }
 @media (max-width: 991.98px) {
@@ -603,5 +631,8 @@ body {
   }
   .switch__btn--active {
     background: #1f1f1f;
+  }
+  .movies__body--shows {
+    display: none;
   }
 }
