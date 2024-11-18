@@ -1,0 +1,44 @@
+.link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 17px 34.5px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  transition: color 0.3s ease 0.3s;
+  z-index: 1;
+  white-space: nowrap;
+}
+@media (any-hover: hover) {
+  .link:hover {
+    color: #391400;
+  }
+  .link:active {
+    color: #fff;
+  }
+  .link::before {
+    content: '';
+    position: absolute;
+    left: -110%;
+    bottom: 0;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background: #fff;
+    transform: translateY(-80%);
+    transition: left 0.3s ease 0.6s, transform 0.3s ease 0.3s;
+    z-index: -1;
+  }
+  .link:hover::before {
+    left: 0%;
+    transform: translateY(0%);
+    transition: left 0.3s ease 0s, transform 0.3s ease 0.3s;
+  }
+  .link:active::before {
+    left: -110%;
+    transform: translateY(-80%);
+    transition: left 0.3s ease 0.6s, transform 0.3s ease 0.3s;
+  }
+}
