@@ -1,5 +1,10 @@
 .header {
   background: #28293e;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 .header__container {
   display: flex;
@@ -8,6 +13,9 @@
   justify-content: space-between;
   padding-block: 10px;
   min-height: 80px;
+  animation: top-bottom 1s ease forwards;
+  transform: translateY(-200%);
+  opacity: 0;
 }
 .header__logo {
   flex-basis: 152px;
@@ -78,14 +86,14 @@
   }
   .menu__body {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     top: 0;
     left: 100%;
     z-index: 2;
     text-align: end;
-    padding: 100px 15px 30px;
-    font-size: 24px;
+    padding: 110px 15px 30px;
+    font-size: 32px;
     overflow-y: auto;
     background: #ef6d58;
     transition: left 0.3s ease;
@@ -177,5 +185,11 @@
   }
   .header__container {
     gap: 10px;
+  }
+}
+@keyframes top-bottom {
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
