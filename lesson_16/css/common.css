@@ -1,3 +1,12 @@
+.label {
+  color: #ef6d58;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2; /* 200% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .link {
   position: relative;
   font-size: 14px;
@@ -11,6 +20,10 @@
   transition: color 0.3s ease 0.3s;
   z-index: 1;
   white-space: nowrap;
+}
+.link--bg-orange {
+  background: #ef6d58;
+  padding: 17px 22px 15px;
 }
 @media (any-hover: hover) {
   .link:hover {
