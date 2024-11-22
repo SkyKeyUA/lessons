@@ -106,6 +106,7 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  will-change: transform;
 }
 .columns__link {
   display: flex;
@@ -137,12 +138,10 @@ body {
   overflow: hidden;
 }
 .row--five .row__image img {
-  max-width: 243.6px;
   aspect-ratio: 243.6 / 281;
   min-inline-size: 157.6px;
 }
 .row--four .row__image img {
-  max-width: 319.5px;
   aspect-ratio: 319.5 / 404;
   min-inline-size: 207px;
 }
@@ -317,7 +316,7 @@ body {
   }
   .columns__line div img:hover,
   .row__image img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .columns__line div img:active,
   .row__image img:active {
