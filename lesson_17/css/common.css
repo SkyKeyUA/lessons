@@ -20,9 +20,6 @@
 .navigation--color-brown {
   color: rgba(57, 20, 0, 0.64);
 }
-.navigation {
-  animation: opacity 0.5s linear 0.3s forwards, translateY 0.5s linear 0.3s forwards;
-}
 .navigation ul li a {
   line-height: 2; /* 200% */
   transition: color 0.3s ease 0s;

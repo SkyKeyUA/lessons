@@ -8,6 +8,9 @@
 .portfolio__section-header {
   animation: opacity 0.5s linear forwards, translateY 0.5s linear forwards;
 }
+.portfolio__navigation {
+  animation: opacity 0.5s linear 0.3s forwards, translateY 0.5s linear 0.3s forwards;
+}
 .portfolio__projects {
   opacity: 0;
 }

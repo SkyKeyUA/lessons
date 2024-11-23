@@ -6,6 +6,7 @@
 .portfolio__container {
 }
 .portfolio__navigation {
+  animation: opacity 0.5s linear forwards, translateY 0.5s linear forwards;
 }
 .portfolio__select {
 }
@@ -13,7 +14,7 @@
   opacity: 0;
 }
 .portfolio__projects {
-  animation: opacity 1s linear 0.6s forwards, translateY 1s linear 0.6s forwards;
+  animation: opacity 1s linear 0.3s forwards, translateY 1s linear 0.3s forwards;
 }
 .portfolio__pagination {
 }
