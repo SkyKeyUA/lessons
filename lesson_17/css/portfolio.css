@@ -1,0 +1,39 @@
+@import url('style.css');
+
+.portfolio {
+  background-color: #fdf0e9;
+}
+.portfolio__container {
+}
+.portfolio__navigation {
+}
+.portfolio__select {
+}
+.portfolio__projects {
+  opacity: 0;
+}
+.portfolio__projects {
+  animation: opacity 1s linear 0.6s forwards, translateY 1s linear 0.6s forwards;
+}
+.portfolio__pagination {
+}
+@media (min-width: 767.98px) {
+  .portfolio {
+    padding-block: 68px 56px;
+  }
+  .portfolio__navigation {
+    margin-block-end: 68px;
+  }
+  .portfolio__projects {
+    margin-block-end: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .portfolio {
+    padding-block: 32px 56px;
+  }
+  .portfolio__navigation,
+  .portfolio__projects {
+    margin-block-end: 48px;
+  }
+}

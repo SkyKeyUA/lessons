@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <title>Adaptive and Responsive</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <h1>Adaptive and Responsive</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="page">
+        <section class="portfolio">
+          <div class="portfolio__container">
+            <div class="portfolio__navigation navigation navigation--color-brown">
+              <ul>
+                <li><a class="navigation__active" href="#">Show All</a><sup>14</sup></li>
+                <li><a href="#">Design</a><sup>6</sup></li>
+                <li><a href="#">Branding</a><sup>4</sup></li>
+                <li><a href="#">Illustration</a><sup>3</sup></li>
+                <li><a href="#">Motion</a><sup>1</sup></li>
+              </ul>
+              <div class="navigation__select">
+                <select name="form[select]">
+                  <option value="01">Show All</option>
+                  <option value="02">Design</option>
+                  <option value="03">Branding</option>
+                  <option value="04">Illustration</option>
+                  <option value="05">Motion</option>
+                </select>
+              </div>
+            </div>
+            <div class="portfolio__projects projects projects--swiper">
+              <a class="projects__item" href="#" target="_blank">
+                <picture>
+                  <source
+                    srcset="
+                      img/portfolio/keyboard-1x.webp   1x,
+                      img/portfolio/keyboard-1.5x.webp 1.5x,
+                      img/portfolio/keyboard-2x.webp   2x,
+                      img/portfolio/keyboard-3x.webp   3x,
+                      img/portfolio/keyboard-4x.webp   4x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="img/portfolio/keyboard-2x.webp" alt="keyboard" />
+                </picture>
+                <div class="projects__body">
+                  <div class="projects__text">Branding</div>
+                  <h3 class="projects__title">KeyBoard</h3>
+                </div>
+              </a>
+              <a class="projects__item" href="#" target="_blank">
+                <picture>
+                  <source
+                    srcset="
+                      img/portfolio/sofa-1x.webp   1x,
+                      img/portfolio/sofa-1.5x.webp 1.5x,
+                      img/portfolio/sofa-2x.webp   2x,
+                      img/portfolio/sofa-3x.webp   3x,
+                      img/portfolio/sofa-4x.webp   4x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="img/portfolio/sofa-1.5x.webp" alt="sofa" />
+                </picture>
+                <div class="projects__body">
+                  <div class="projects__text">Design</div>
+                  <h3 class="projects__title">SOFA</h3>
+                </div>
+              </a>
+              <a class="projects__item" href="#" target="_blank">
+                <picture>
+                  <source
+                    srcset="
+                      img/portfolio/work-media-1x.webp   1x,
+                      img/portfolio/work-media-1.5x.webp 1.5x,
+                      img/portfolio/work-media-2x.webp   2x,
+                      img/portfolio/work-media-3x.webp   3x,
+                      img/portfolio/work-media-4x.webp   4x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="img/portfolio/work-media-1.5x.webp" alt="work media" />
+                </picture>
+                <div class="projects__body">
+                  <div class="projects__text">Illustration</div>
+                  <h3 class="projects__title">Work Media</h3>
+                </div>
+              </a>
+              <a class="projects__item" href="#" target="_blank">
+                <picture>
+                  <source
+                    srcset="
+                      img/portfolio/done-1x.webp   1x,
+                      img/portfolio/done-1.5x.webp 1.5x,
+                      img/portfolio/done-2x.webp   2x,
+                      img/portfolio/done-3x.webp   3x,
+                      img/portfolio/done-4x.webp   4x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="img/portfolio/done-1.5x.webp" alt="done" />
+                </picture>
+                <div class="projects__body">
+                  <div class="projects__text">Motion</div>
+                  <h3 class="projects__title">DDDone</h3>
+                </div>
+              </a>
+              <a class="projects__item" href="#" target="_blank">
+                <picture>
+                  <source
+                    srcset="
+                      img/portfolio/handp-1x.webp   1x,
+                      img/portfolio/handp-1.5x.webp 1.5x,
+                      img/portfolio/handp-2x.webp   2x,
+                      img/portfolio/handp-3x.webp   3x,
+                      img/portfolio/handp-4x.webp   4x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="img/portfolio/handp-1.5x.webp" alt="sofa" />
+                </picture>
+                <div class="projects__body">
+                  <div class="projects__text">Branding</div>
+                  <h3 class="projects__title">HandP</h3>
+                </div>
+              </a>
+            </div>
+            <div class="portfolio__pagination pagination-portfolio">
+              <button
+                class="pagination-portfolio__btn pagination-portfolio__btn--active"
+                type="button"
+              ></button>
+              <button class="pagination-portfolio__btn" type="button"></button>
+              <button class="pagination-portfolio__btn" type="button"></button>
+              <button class="pagination-portfolio__btn" type="button"></button>
+              <button class="pagination-portfolio__btn" type="button"></button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div>footer</div>
+          <div>Copyright 2024 OLEKSANDR</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
