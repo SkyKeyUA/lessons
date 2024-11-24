@@ -98,20 +98,19 @@
   animation: opacity-block 1s ease forwards 1s, translateX-block 1s ease forwards 1s;
 }
 .user-studio__image {
+  flex: 0 0 48px;
+  height: 48px;
+  padding-block: 5px 0px;
+  padding-inline: 5px;
   background: #b550f6;
   border-radius: 50%;
-  flex-basis: 48px;
-  flex-shrink: 0;
-  aspect-ratio: 48 / 48;
   align-self: flex-start;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   overflow: hidden;
 }
 .user-studio__image img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .user-studio__body {
   font-size: 16px;
