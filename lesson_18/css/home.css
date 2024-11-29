@@ -95,7 +95,7 @@
 .grid__body {
   aspect-ratio: 304 / 152;
   padding-inline: 28px;
-  padding-block: 43px;
+  padding-block: 20px;
   font-size: clamp(1rem, 1.859vw + 0.628rem, 2.188rem);
   line-height: normal;
   letter-spacing: 1.4px;
