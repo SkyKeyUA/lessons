@@ -121,109 +121,92 @@
     column-gap: 32px;
   }
   .grid__item {
+    align-content: center;
+  }
+  .grid__item:nth-child(17n + 1) {
+    grid-row: span 52;
+    aspect-ratio: 304 / 208;
+  }
+  .grid__item:nth-child(17n + 2) {
+    grid-row: span 80;
+    aspect-ratio: 304 / 320;
+  }
+  .grid__item:nth-child(17n + 3) {
     grid-row: span 44;
+    aspect-ratio: 304 / 176;
   }
-  .grid__item:nth-child(1) {
-    grid-row: 1 / span 49;
-    aspect-ratio: 304 / 196;
-    align-content: start;
-  }
-  .grid__item:nth-child(5) {
-    grid-row: 50 / span 80;
-    aspect-ratio: 304 / 320;
-    align-content: center;
-  }
-  .grid__item:nth-child(9) {
-    grid-row: 130 / span 52;
+  .grid__item:nth-child(17n + 4) {
+    grid-row: span 52;
     aspect-ratio: 304 / 208;
-    align-content: center;
   }
-  .grid__item:nth-child(13) {
-    grid-row: 182 / span 77;
-    aspect-ratio: 304 / 308;
-    align-content: end;
+  .grid__item:nth-child(17n + 6) {
+    grid-row: span 80;
+    aspect-ratio: 304 / 320;
   }
-  .grid__item:nth-child(2) {
-    grid-row: 1 / span 77;
-    aspect-ratio: 304 / 308;
-    align-content: start;
-  }
-  .grid__item:nth-child(6) {
-    grid-row: 78 / span 52;
+  .grid__item:nth-child(17n + 8) {
+    grid-row: span 52;
     aspect-ratio: 304 / 208;
-    align-content: center;
   }
-  .grid__item:nth-child(10) {
-    grid-row: 130 / span 44;
+  .grid__item:nth-child(17n + 5) {
+    grid-row: span 44;
     aspect-ratio: 304 / 176;
-    align-content: center;
   }
-  .grid__item:nth-child(14) {
-    grid-row: 174 / span 44;
-    aspect-ratio: 304 / 176;
-    align-content: center;
-  }
-  .grid__item:nth-child(16) {
-    grid-row: 218 / span 41;
-    aspect-ratio: 304 / 164;
-    align-content: end;
-  }
-  .grid__item:nth-child(3) {
-    grid-row: 1 / span 41;
-    aspect-ratio: 304 / 164;
-    align-content: start;
-  }
-  .grid__item:nth-child(7) {
-    grid-row: 42 / span 44;
-    aspect-ratio: 304 / 176;
-    align-content: center;
-  }
-  .grid__item:nth-child(11) {
-    grid-row: 86 / span 44;
-    aspect-ratio: 304 / 176;
-    align-content: center;
-  }
-  .grid__item:nth-child(12) {
-    grid-row: 130 / span 80;
+  .grid__item:nth-child(17n + 7) {
+    grid-row: span 80;
     aspect-ratio: 304 / 320;
-    align-content: center;
   }
-  .grid__item:nth-child(17) {
-    grid-row: 210 / span 49;
-    aspect-ratio: 304 / 196;
-    align-content: end;
+  .grid__item:nth-child(17n + 10) {
+    grid-row: span 52;
+    aspect-ratio: 304 / 208;
   }
-  .grid__item:nth-child(4) {
-    grid-row: 1 / span 49;
-    aspect-ratio: 304 / 196;
-    align-content: start;
+  .grid__item:nth-child(17n + 11) {
+    grid-row: span 44;
+    aspect-ratio: 304 / 176;
   }
-  .grid__item:nth-child(8) {
-    grid-row: 50 / span 80;
+  .grid__item:nth-child(17n + 9) {
+    grid-row: span 44;
+    aspect-ratio: 304 / 176;
+  }
+  .grid__item:nth-child(17n + 13) {
+    grid-row: span 132;
+    aspect-ratio: 304 / 528;
+  }
+  .grid__item:nth-child(17n + 15) {
+    grid-row: span 80;
     aspect-ratio: 304 / 320;
-    align-content: center;
   }
-  .grid__item:nth-child(15) {
-    grid-row: 130 / span 129;
-    aspect-ratio: 304 / 516;
-    align-content: end;
+  .grid__item:nth-child(17n + 14) {
+    grid-row: span 44;
+    aspect-ratio: 304 / 176;
   }
-  .grid__item:nth-child(1) .grid__body,
-  .grid__item:nth-child(4) .grid__body,
-  .grid__item:nth-child(6) .grid__body,
-  .grid__item:nth-child(9) .grid__body,
-  .grid__item:nth-child(17) .grid__body {
+  .grid__item:nth-child(17n + 12) {
+    grid-row: span 80;
+    aspect-ratio: 304 / 320;
+  }
+  .grid__item:nth-child(17n) {
+    grid-row: span 44;
+    aspect-ratio: 304 / 176;
+  }
+  .grid__item:nth-child(17n + 16) {
+    grid-row: span 52;
+    aspect-ratio: 304 / 208;
+  }
+  .grid__item:nth-child(17n + 1) .grid__body,
+  .grid__item:nth-child(17n + 4) .grid__body,
+  .grid__item:nth-child(17n + 8) .grid__body,
+  .grid__item:nth-child(17n + 10) .grid__body,
+  .grid__item:nth-child(17n + 16) .grid__body {
     aspect-ratio: 304 / 184;
   }
 
-  .grid__item:nth-child(2) .grid__body,
-  .grid__item:nth-child(5) .grid__body,
-  .grid__item:nth-child(8) .grid__body,
-  .grid__item:nth-child(13) .grid__body,
-  .grid__item:nth-child(12) .grid__body {
+  .grid__item:nth-child(17n + 2) .grid__body,
+  .grid__item:nth-child(17n + 6) .grid__body,
+  .grid__item:nth-child(17n + 7) .grid__body,
+  .grid__item:nth-child(17n + 12) .grid__body,
+  .grid__item:nth-child(17n + 15) .grid__body {
     aspect-ratio: 304 / 296;
   }
-  .grid__item:nth-child(15) .grid__body {
+  .grid__item:nth-child(17n + 13) .grid__body {
     aspect-ratio: 304 / 504;
   }
 }
