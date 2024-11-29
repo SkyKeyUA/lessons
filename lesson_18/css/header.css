@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+  padding-block: 20px;
+  line-height: 1.5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #000
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #000 50%, rgba(255, 255, 255, 0.2) 100%);
+  font-size: clamp(1.5rem, 2.727vw + 0.955rem, 3rem);
+}

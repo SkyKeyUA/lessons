@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  color: #fff;
+  background: #28293e;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+  font-family: 'Jomolhari', serif;
+  overflow: hidden;
+}
+[class*='__container'] {
+  max-width: 1342px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+main {
+  flex: 1 1 auto;
+}

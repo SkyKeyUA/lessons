@@ -1,0 +1,281 @@
+@import url('style.css');
+
+.page {
+}
+.page__custom {
+}
+.custom,
+.grid {
+  padding-block: 70px;
+}
+.custom__container {
+}
+.custom__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-block-size: clamp(16rem, 80.645vw - 0.129rem, 66rem);
+  column-gap: 2.439024%; /* 32/1312 */
+  margin-block: 0.914634%; /* 12/1312 */
+}
+.custom h2,
+.grid h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-block-end: 32px;
+}
+.custom__item {
+  flex-basis: 23.170732%; /* 304/1312 */
+  width: 100%;
+  flex-grow: 0;
+  max-inline-size: 23.170732%; /* 304/1312 */
+  padding-block: 0.914634%; /* 12/1312 */
+}
+.custom__body {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  padding-inline: 28px;
+  align-items: flex-end;
+}
+.custom__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.custom__item:nth-child(17n + 1),
+.custom__item:nth-child(17n + 3),
+.custom__item:nth-child(17n + 6),
+.custom__item:nth-child(17n + 14),
+.custom__item:nth-child(17n + 15) {
+  aspect-ratio: 304 / 208;
+}
+
+.custom__item:nth-child(17n + 2),
+.custom__item:nth-child(17n + 4),
+.custom__item:nth-child(17n + 5),
+.custom__item:nth-child(17n + 13),
+.custom__item:nth-child(17n + 16) {
+  aspect-ratio: 304 / 320;
+}
+
+.custom__item:nth-child(17n + 7),
+.custom__item:nth-child(17n + 8),
+.custom__item:nth-child(17n + 9),
+.custom__item:nth-child(17n + 10),
+.custom__item:nth-child(17n + 11),
+.custom__item:nth-child(17n + 12) {
+  aspect-ratio: 304 / 176;
+}
+.custom__item:nth-child(17n) {
+  aspect-ratio: 304 / 528;
+}
+
+.page__custom__grid {
+}
+.grid {
+}
+.grid__container {
+}
+.grid__items {
+  display: grid;
+}
+.grid__item {
+  width: 100%;
+  aspect-ratio: 304 / 176;
+  align-content: end;
+}
+.grid__body {
+  aspect-ratio: 304 / 152;
+  padding-inline: 28px;
+  padding-block: 43px;
+  font-size: clamp(1rem, 1.859vw + 0.628rem, 2.188rem);
+  line-height: normal;
+  letter-spacing: 1.4px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+.grid__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media (min-width: 991.98px) {
+  .grid__items {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(258, 1fr);
+    column-gap: 32px;
+  }
+  .grid__item {
+    grid-row: span 44;
+  }
+  .grid__item:nth-child(1),
+  .grid__item:nth-child(2),
+  .grid__item:nth-child(3),
+  .grid__item:nth-child(4) {
+    grid-column: 1;
+  }
+  .grid__item:nth-child(5),
+  .grid__item:nth-child(6),
+  .grid__item:nth-child(7),
+  .grid__item:nth-child(8),
+  .grid__item:nth-child(9) {
+    grid-column: 2;
+  }
+  .grid__item:nth-child(10),
+  .grid__item:nth-child(11),
+  .grid__item:nth-child(12),
+  .grid__item:nth-child(13),
+  .grid__item:nth-child(14) {
+    grid-column: 3;
+  }
+  .grid__item:nth-child(15),
+  .grid__item:nth-child(16),
+  .grid__item:nth-child(17) {
+    grid-column: 4;
+  }
+  .grid__item:nth-child(1) {
+    grid-row: 1 / span 49;
+    aspect-ratio: 304 / 196;
+    align-content: start;
+  }
+  .grid__item:nth-child(2) {
+    grid-row: 50 / span 80;
+    aspect-ratio: 304 / 320;
+    align-content: center;
+  }
+  .grid__item:nth-child(3) {
+    grid-row: 130 / span 52;
+    aspect-ratio: 304 / 208;
+    align-content: center;
+  }
+  .grid__item:nth-child(4) {
+    grid-row: 182 / span 77;
+    aspect-ratio: 304 / 308;
+    align-content: end;
+  }
+  .grid__item:nth-child(5) {
+    grid-row: 1 / span 77;
+    aspect-ratio: 304 / 308;
+    align-content: start;
+  }
+  .grid__item:nth-child(6) {
+    grid-row: 78 / span 52;
+    aspect-ratio: 304 / 208;
+    align-content: center;
+  }
+  .grid__item:nth-child(7) {
+    grid-row: 130 / span 44;
+    aspect-ratio: 304 / 176;
+    align-content: center;
+  }
+  .grid__item:nth-child(8) {
+    grid-row: 174 / span 44;
+    aspect-ratio: 304 / 176;
+    align-content: center;
+  }
+  .grid__item:nth-child(9) {
+    grid-row: 218 / span 41;
+    aspect-ratio: 304 / 164;
+    align-content: end;
+  }
+  .grid__item:nth-child(10) {
+    grid-row: 1 / span 41;
+    aspect-ratio: 304 / 164;
+    align-content: start;
+  }
+  .grid__item:nth-child(11) {
+    grid-row: 42 / span 44;
+    aspect-ratio: 304 / 176;
+    align-content: center;
+  }
+  .grid__item:nth-child(12) {
+    grid-row: 86 / span 44;
+    aspect-ratio: 304 / 176;
+    align-content: center;
+  }
+  .grid__item:nth-child(13) {
+    grid-row: 130 / span 80;
+    aspect-ratio: 304 / 320;
+    align-content: center;
+  }
+  .grid__item:nth-child(14) {
+    grid-row: 210 / span 49;
+    aspect-ratio: 304 / 196;
+    align-content: end;
+  }
+  .grid__item:nth-child(15) {
+    grid-row: 1 / span 49;
+    aspect-ratio: 304 / 196;
+    align-content: start;
+  }
+  .grid__item:nth-child(16) {
+    grid-row: 50 / span 80;
+    aspect-ratio: 304 / 320;
+    align-content: center;
+  }
+  .grid__item:nth-child(17) {
+    grid-row: 130 / span 129;
+    aspect-ratio: 304 / 516;
+    align-content: end;
+  }
+  .grid__item:nth-child(1) .grid__body,
+  .grid__item:nth-child(3) .grid__body,
+  .grid__item:nth-child(6) .grid__body,
+  .grid__item:nth-child(14) .grid__body,
+  .grid__item:nth-child(15) .grid__body {
+    aspect-ratio: 304 / 184;
+  }
+
+  .grid__item:nth-child(2) .grid__body,
+  .grid__item:nth-child(4) .grid__body,
+  .grid__item:nth-child(5) .grid__body,
+  .grid__item:nth-child(13) .grid__body,
+  .grid__item:nth-child(16) .grid__body {
+    aspect-ratio: 304 / 296;
+  }
+  .grid__item:nth-child(17) .grid__body {
+    aspect-ratio: 304 / 504;
+  }
+}
+@media (max-width: 1199.98px) {
+  .grid__body {
+    padding: 20px;
+  }
+  .grid__items {
+    column-gap: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .grid__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .grid__body {
+    padding: 10px;
+  }
+  .grid__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 479.98px) {
+  .grid__items {
+    column-gap: 12px;
+  }
+}
