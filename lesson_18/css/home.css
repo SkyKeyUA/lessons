@@ -118,7 +118,6 @@
 @media (min-width: 991.98px) {
   .grid__items {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(258, 1fr);
     column-gap: 32px;
   }
   .grid__item {
