@@ -1,0 +1,44 @@
+@keyframes background-position {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes rotate-around-cw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-around-ccw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes transform-x {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes transform-y {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes left {
+  to {
+    left: 100%;
+  }
+}

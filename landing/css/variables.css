@@ -1,0 +1,25 @@
+:root {
+  /* colors */
+  --global-bg: #fafbff;
+  --primary: #000000;
+  --global-white: #ffffff;
+  --global-white-5: #f5f5f5;
+  --global-black-80: #292d32;
+  --global-grey-80: #404b52;
+  --global-grey-60: #757575;
+  --global-grey-40: #9197b3;
+  --global-grey-20: #b5b7c0;
+  --global-grey-5: #eee;
+  --global-green-60: #008767;
+  --global-green-40: #00b087;
+  --global-green-20: #16c098;
+  --global-red-80: #df0404;
+  --global-red-20: #ffc5c5;
+  --global-purple-80: #5932ea;
+  --main-font-family: 'Poppins', sans-serif;
+
+  --shadow-dashboard: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+
+  --active: rgba(22, 192, 152, 0.38);
+  --inactive: #ffc5c5;
+}
