@@ -159,6 +159,7 @@
   display: grid;
   column-gap: 5.555%;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
 }
 .designs__item {
 }
