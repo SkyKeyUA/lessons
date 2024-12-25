@@ -160,15 +160,17 @@
 .position__img img {
   border-radius: 0.625rem;
 }
-.icons {
+.position__icons {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0.75rem;
   border-radius: 0.25rem;
   background: var(--primary-bg);
   box-shadow: var(--icons-box-shadow);
+}
+.icons {
+  padding: 0.75rem;
   display: flex;
   align-items: center;
 }
