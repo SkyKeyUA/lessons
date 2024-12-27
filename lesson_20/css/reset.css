@@ -88,3 +88,13 @@ th,
 td {
   display: inline;
 }
+textarea {
+  resize: vertical;
+}
+address {
+  font-style: normal;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}

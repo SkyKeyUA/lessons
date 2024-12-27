@@ -8,7 +8,10 @@
   height: 100%;
   object-fit: contain;
 }
-
+.logo {
+  width: 13rem; /* 208/16 */
+  aspect-ratio: 208 / 56;
+}
 .link {
   color: var(--primary-bg);
   font-weight: 600;
@@ -28,10 +31,15 @@
   column-gap: 0.75rem;
   width: fit-content;
 }
-.link--arrow svg {
+.link--arrow-small svg {
   width: 1.5rem;
   height: 1.5rem;
   padding: 0.375rem;
+}
+.link--arrow-large svg {
+  width: 1.5rem;
+  aspect-ratio: 1;
+  padding: 0.125rem;
 }
 .link--arrow svg path {
   fill: var(--primary-bg);
@@ -126,6 +134,73 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+.form {
+  color: var(--experience-text);
+  font-size: 1.125rem;
+  line-height: 1.333; /* 133.333% */
+}
+.form__row,
+.form__columns div,
+.form__textarea {
+  position: relative;
+  padding-block-start: 0.875rem;
+}
+.form__row,
+.form__columns {
+  margin-block-end: 1.5rem;
+}
+.form__textarea {
+  margin-block-end: 3.125rem;
+}
+.form__row:hover .form__label,
+.form__columns div:hover .form__label,
+.form__textarea:hover .form__label {
+  color: var(--link-bg);
+}
+
+.form__columns div:nth-child(1) {
+  margin-inline-end: 1.5rem;
+  flex: 0 1 12.5rem;
+}
+.form__columns div:nth-child(2) {
+  flex: 1 1;
+}
+
+.form__textarea textarea {
+  min-height: 3rem;
+}
+
+.form__input,
+.form__textarea textarea {
+  border-bottom: 0.125rem solid var(--portfolio-card-border);
+  transition: border-bottom 0.3s ease;
+  color: var(--link-bg);
+}
+.form__input:focus,
+.form__textarea textarea:focus {
+  border-color: var(--link-bg);
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label,
+.form__textarea textarea:focus + .form__label,
+.form__textarea textarea:not(:placeholder-shown) + .form__label {
+  color: var(--link-bg);
+  font-size: 0.75rem;
+}
+
+.form__link {
+  overflow: hidden;
+}
+.form__link svg {
+  transition: transform 0.3s ease;
+}
+
 @media (any-hover: hover) {
   .link:hover {
     box-shadow: var(--hover-link-box-shadow);
@@ -149,10 +224,37 @@
   .link--arrow:active svg path {
     fill: var(--link-bg);
   }
+  .form__link:hover svg {
+    transform: translateX(0.625rem);
+  }
+  .form__link:active svg {
+    transform: translateX(3.125rem);
+  }
+  .form__link:active {
+    box-shadow: inherit;
+  }
+  .form__input:hover::placeholder,
+  .form__textarea textarea:hover::placeholder {
+    color: var(--link-bg);
+  }
+  .form__input:hover,
+  .form__textarea textarea:hover {
+    border-bottom: 0.125rem solid var(--link-bg);
+  }
+}
+@media (min-width: 37.4988rem) {
+  .form__columns {
+    display: flex;
+  }
 }
 @media (max-width: 68.7488rem) {
   .section-header--margin-bottom {
     margin-block-end: 2rem;
+  }
+}
+@media (max-width: 37.4988rem) {
+  .form__columns div:not(:last-child) {
+    margin-block-end: 1.5rem;
   }
 }
 @media (max-width: 29.9988rem) {

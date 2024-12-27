@@ -15,8 +15,6 @@
   align-items: center;
 }
 .header__logo {
-  width: 13rem; /* 208/16 */
-  aspect-ratio: 208 / 56;
   position: relative;
   z-index: 5;
 }
@@ -32,7 +30,7 @@
 .menu a {
   padding-block: 0.75em; /* 12/16 */
   padding-inline: 1.5em; /* 24/16 */
-  border-radius: 4px;
+  border-radius: 0.25rem;
   transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 .menu__active {
@@ -63,8 +61,6 @@
   .icon-menu {
     display: none;
   }
-}
-@media (min-width: 47.9988rem) {
 }
 @media (max-width: 68.7488rem) {
   .header__container {
@@ -130,9 +126,6 @@
     height: 0.25rem;
     width: 100%;
     background-color: var(--link-bg);
-  }
-  .icon-menu::before,
-  .icon-menu::after {
     transition: transform 0.3s ease;
   }
   .icon-menu span {

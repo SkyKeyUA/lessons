@@ -3,45 +3,35 @@
 }
 
 .icon-menu {
-  position: relative;
-  width: 30px;
-  aspect-ratio: 1;
+  display: flex;
+  flex-basis: 1.875rem;
+  width: 1.875rem;
+  flex-shrink: 0;
+  flex-direction: column;
 }
-.icon-menu span,
 .icon-menu::before,
 .icon-menu::after {
   content: '';
-  position: absolute;
-  left: 0;
-  height: 4px;
+  height: 0.25rem;
   width: 100%;
-  background-color: #111b47;
-}
-.icon-menu::before,
-.icon-menu::after {
+  background-color: var(--link-bg);
   transition: transform 0.3s ease;
 }
-.icon-menu::before {
-  top: calc(50% - 8px);
-  transform: translate(0px, -50%);
-}
 .icon-menu span {
-  top: 50%;
-  transition: width 0.3s ease;
-  transform: translate(0px, -50%);
-}
-.icon-menu::after {
-  bottom: calc(50% - 8px);
-  transform: translate(0px, 50%);
+  height: 0.25rem;
+  width: 100%;
+  background-color: var(--link-bg);
+  transition: width 0.3s ease, margin-block 0.3s ease, height 0.3s ease;
+  margin-block: 0.375rem;
 }
 .open-menu .icon-menu span {
   width: 0;
+  margin-block: 0;
+  height: 0;
 }
 .open-menu .icon-menu::before {
-  transform: translate(0px, -50%) rotate(45deg);
-  top: 50%;
+  transform: rotate(45deg) translateY(0.1875rem);
 }
 .open-menu .icon-menu::after {
-  transform: translate(0px, 50%) rotate(-45deg);
-  bottom: 50%;
+  transform: rotate(-45deg) translateY(-0.1875rem);
 }

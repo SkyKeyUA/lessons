@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--primary-text);
   font-family: var(--main-font-family);
