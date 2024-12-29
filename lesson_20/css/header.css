@@ -57,12 +57,12 @@
     background: var(--active-link-background);
   }
 }
-@media (min-width: 68.7488rem) {
+@media (min-width: 68.7488em) {
   .icon-menu {
     display: none;
   }
 }
-@media (max-width: 68.7488rem) {
+@media (max-width: 68.7488em) {
   .header__container {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -147,7 +147,7 @@
     transform: rotate(-45deg) translateY(-0.1875rem);
   }
 }
-@media (max-width: 47.9988rem) {
+@media (max-width: 47.9988em) {
   .header__container {
     min-height: 5rem;
   }
@@ -155,7 +155,7 @@
     width: 11rem;
   }
 }
-@media (max-width: 29.9988rem) {
+@media (max-width: 29.9988em) {
   .header__btns {
     gap: 1rem;
   }
