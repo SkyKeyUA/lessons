@@ -464,15 +464,15 @@
   align-items: center;
   justify-content: center;
 }
-.happy__item a:hover img {
-  filter: none;
-}
 .happy__item img {
   aspect-ratio: 1;
   padding: 15%; /* 30/200 */
   filter: brightness(0) invert(81%) sepia(5%) saturate(276%) hue-rotate(177deg) brightness(92%)
     contrast(93%);
   transition: filter 0.3s ease 0s;
+}
+.happy__item a:hover img {
+  filter: none;
 }
 .happy__item--amazon img {
   padding-block-start: 27.5%; /* 55/200 */
