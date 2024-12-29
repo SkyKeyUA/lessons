@@ -220,11 +220,15 @@
 .process__section-header .section-header__text {
   color: var(--experience-text);
 }
+.process__columns {
+  counter-reset: process-columns;
+}
 .process__column {
   border-radius: 0.75rem;
   background: var(--primary-bg);
   box-shadow: var(--cards-box-shadow);
   padding: 2rem;
+  counter-increment: process-columns;
 }
 .process__icon svg {
   width: 4.5rem;
@@ -247,6 +251,10 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2; /* 120% */
+}
+.process__subtitle::before {
+  content: counter(process-columns) '.';
+  margin-inline-end: 0.5rem;
 }
 .process__text {
   line-height: 1.5; /* 150% */
@@ -451,16 +459,17 @@
   font-size: 0;
 }
 
-.happy__item svg {
-  width: 100%;
+.happy__item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.happy__item img {
   aspect-ratio: 1;
-  object-fit: contain;
   padding: 15%; /* 30/200 */
+  filter: grayscale(100%);
 }
-.happy__item svg path {
-  transition: fill 0.3s ease;
-}
-.happy__item--amazon svg {
+.happy__item--amazon img {
   padding-block-start: 27.5%; /* 55/200 */
   align-self: flex-start;
 }
@@ -602,42 +611,7 @@
     opacity: 1;
     visibility: visible;
   }
-  .happy__item--google a:hover svg path:nth-child(1),
-  .happy__item--google a:hover svg path:nth-child(5) {
-    fill: var(--google-first-letter);
-  }
-  .happy__item--google a:hover svg path:nth-child(3),
-  .happy__item--google a:hover svg path:nth-child(6) {
-    fill: var(--google-second-letter);
-  }
-  .happy__item--google a:hover svg path:nth-child(4) {
-    fill: var(--google-third-letter);
-  }
-  .happy__item--google a:hover svg path:nth-child(2) {
-    fill: var(--google-fith-letter);
-  }
-  .happy__item--dribbble a:hover svg path {
-    fill: var(--dribbble-icon);
-  }
-  .happy__item--linkedin a:hover svg path:first-child {
-    fill: var(--linkedin-icon);
-  }
-  .happy__item--linkedin a:hover svg path:nth-child(2),
-  .happy__item--linkedin a:hover svg path:nth-child(3) {
-    fill: var(--global-black);
-  }
-  .happy__item--amazon a:hover svg path {
-    fill: var(--amazon-icon);
-  }
-  .happy__item--amazon a:hover svg path:first-child {
-    fill: var(--global-black);
-  }
-  .happy__item--medium a:hover svg path {
-    fill: var(--global-black);
-  }
-  .happy__item--spotify a:hover svg path {
-    fill: var(--spotify-icon);
-  }
+
   .contacts__item:hover {
     background: var(--primary-bg);
     box-shadow: var(--icons-box-shadow);
