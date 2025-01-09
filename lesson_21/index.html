@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/home.css" />
+	<title>Movies & Shows</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo header__logo--contain">
+					<a href="#"><img src="img/logo.svg" alt="stream vibe logo"></a>
+				</div>
+				<nav class="header__menu menu">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a class="menu__active" href="#">Movies & Shows</a>
+						</li>
+						<li>
+							<a href="#">Support</a>
+						</li>
+						<li>
+							<a href="#">Subscriptions</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__btns">
+					<button type="button" class="header__search header__search--contain header__search--hover">
+						<img src="img/icons/search.svg" alt="search">
+					</button>
+					<button type="button"
+						class="header__notification header__notification--contain header__notification--hover">
+						<img src="img/icons/notification.svg" alt="notification">
+					</button>
+					<button type="button" aria-label="open/closed menu" class="header__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__swiper">
+						<div class="hero__bg hero__bg--cover">
+							<video src="video/avengers_endgame_video.webm" poster="img/hero-bg.webp"
+								alt="Movie: Avengers Endgame">Your browser does not support
+								HTML video.</video>
+						</div>
+						<div class="hero__section-header section-header">
+							<h2 class="section-header__title">Avengers : Endgame</h2>
+							<div class="section-header__text section-header__text--none">
+								<p>With the help of remaining allies, the Avengers must assemble once more in order to undo
+									Thanos's actions and undo the
+									chaos to the universe, no matter what consequences may be in store, and no matter who they
+									face... Avenge the fallen.</p>
+							</div>
+							<div class="section-header__btns section-header__btns--margin">
+								<button type="button" class="section-header__btn btn btn--hover">
+									<img src="img/icons/play.svg" alt="play a movie">Play Now</button>
+								<div class="section-header__icons">
+									<button type="button" class="section-header__icon icon icon--hover icon--contain">
+										<img src="img/icons/add.svg" alt="add a movie">
+									</button>
+									<button type="button" class="section-header__icon icon icon--hover icon--contain">
+										<img src="img/icons/like.svg" alt="like a movie">
+									</button>
+									<button type="button" class="section-header__icon icon icon--hover icon--contain">
+										<img src="img/icons/sound.svg" alt="sound a movie">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="hero__pagination pagination pagination--padding">
+							<button type="button" class="pagination__arrow arrow arrow--hover arrow--left">
+								<img src="img/icons/arrow.svg" alt="arrow left">
+							</button>
+							<ul class="pagination__dots">
+								<li class="pagination__dot pagination__dot--active"><a aria-label="next slide" href="#"></a>
+								</li>
+								<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+								<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+								<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+							</ul>
+							<button type="button" class="pagination__arrow arrow arrow--hover arrow--right">
+								<img src="img/icons/arrow.svg" alt="arrow right">
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__switch switch">
+				<div class="switch__container">
+					<div class="switch__body">
+						<button class="switch__active" type="button" aria-label="Go to Movies">Movies</button>
+						<button type="button" aria-label="Go to Shows">Shows</button>
+					</div>
+				</div>
+			</div>
+			<div class="page__body body body--movies">
+				<div class="body__container">
+					<div class="body__wrapper">
+						<a class="body__btn btn btn--link" href="#" aria-label="go to movies">Movies</a>
+						<section class="body__genres genres">
+							<div class="genres__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Our Genres</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="genres__cards cards cards--columns">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/01.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/02.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/03.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/04.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Action</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/05.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/06.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/07.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/08.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Adventure</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/09.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/10.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/11.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/12.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Comedy</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/13.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/14.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/15.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/16.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Drama</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/17.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/18.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/19.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/20.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Horror</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__popular popular">
+							<div class="popular__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Popular Top 10 In Genres</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="popular__cards cards cards--columns">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/01.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/02.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/03.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/04.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Action</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/05.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/06.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/07.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/08.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Adventure</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/09.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/10.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/11.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/12.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Comedy</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/13.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/14.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/15.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/16.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Drama</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__trending trending">
+							<div class="trending__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Trending Now</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="trending__cards cards cards--row cards--row-five">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/trending/01.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">1h 30min</div>
+												<div class="bottom__info bottom__info--view">2K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/trending/02.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">1h 57min</div>
+												<div class="bottom__info bottom__info--view">1.5K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/trending/03.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">2h 10min</div>
+												<div class="bottom__info bottom__info--view">1.8K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/trending/04.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">2h 20min</div>
+												<div class="bottom__info bottom__info--view">3K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/trending/05.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">1h 42min</div>
+												<div class="bottom__info bottom__info--view">5K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__releases releases">
+							<div class="releases__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">New Releases</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="releases__cards cards cards--row cards--row-five">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/releases/01.webp" alt="movie name">
+											</div>
+											<div class="cards__date">
+												Released at <time datetime="2023-04-14">14 April 2023</time>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/releases/02.webp" alt="movie name">
+											</div>
+											<div class="cards__date">
+												Released at <time datetime="2023-04-14">14 April 2023</time>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/releases/03.webp" alt="movie name">
+											</div>
+											<div class="cards__date">
+												Released at <time datetime="2023-04-14">14 April 2023</time>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/releases/04.webp" alt="movie name">
+											</div>
+											<div class="cards__date">
+												Released at <time datetime="2023-04-14">14 April 2023</time>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/releases/05.webp" alt="movie name">
+											</div>
+											<div class="cards__date">
+												Released at <time datetime="2023-04-14">14 April 2023</time>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__must must">
+							<div class="must__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Must - Watch Movies</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="must__cards cards cards--row cards--row-four">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/01.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">1h 57min</div>
+												<div class="bottom__stars bottom__stars--half-four">20K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/02.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">1h 30min</div>
+												<div class="bottom__stars bottom__stars--four">20K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/03.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">1h 42min</div>
+												<div class="bottom__stars bottom__stars--half-four">20K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/04.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">2h 10min</div>
+												<div class="bottom__stars bottom__stars--four">20K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="page__body body body--shows">
+				<div class="body__container">
+					<div class="body__wrapper">
+						<a class="body__btn btn btn--link" href="#" aria-label="go to movies">Shows</a>
+						<section class="body__genres genres">
+							<div class="genres__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Our Genres</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="genres__cards cards cards--columns">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/01.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/02.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/03.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/04.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Action</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/05.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/06.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/07.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/08.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Adventure</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/09.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/10.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/11.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/12.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Comedy</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/13.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/14.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/15.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/16.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Drama</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/genres/17.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/18.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/19.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/genres/20.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<h3 class="cards__subtitle subtitle subtitle--smaller">Horror</h3>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__popular popular">
+							<div class="popular__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Popular Top 10 In Genres</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="popular__cards cards cards--columns">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/01.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/02.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/03.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/04.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Action</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/05.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/06.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/07.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/08.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Adventure</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/09.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/10.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/11.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/12.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Comedy</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<article class="cards__article">
+											<div class="cards__images cards__images--contain">
+												<div class="cards__image"><img src="img/popular/13.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/14.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/15.webp" alt="movie name"></div>
+												<div class="cards__image"><img src="img/popular/16.webp" alt="movie name"></div>
+											</div>
+											<div class="cards__bottom">
+												<div class="cards__info">
+													<div class="cards__top">Top 10 In</div>
+													<h3 class="cards__subtitle subtitle subtitle--bigger">Drama</h3>
+												</div>
+												<div class="cards__arrow cards__arrow--contain"><img src="img/icons/arrow.svg"
+														alt="arrow"></div>
+											</div>
+										</article>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__must must">
+							<div class="must__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Trending Shows Now</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="must__cards cards cards--row cards--row-four">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/05.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">8h 20min</div>
+												<div class="bottom__info bottom__info--season">4 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/06.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">12h 23min</div>
+												<div class="bottom__info bottom__info--season">5 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/07.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">14h 30min</div>
+												<div class="bottom__info bottom__info--season">3 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/08.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">7h 40min</div>
+												<div class="bottom__info bottom__info--season">2 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__must must">
+							<div class="must__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">New Released Shows</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="must__cards cards cards--row cards--row-four">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/09.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">12h 23min</div>
+												<div class="bottom__info bottom__info--season">5 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/10.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">7h 40min</div>
+												<div class="bottom__info bottom__info--season">2 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/11.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">8h 20min</div>
+												<div class="bottom__info bottom__info--season">4 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--ratio cards__picture--contain">
+												<img src="img/must/12.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">10h 30min</div>
+												<div class="bottom__info bottom__info--season">3 Season</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="body__must must">
+							<div class="must__section-header section-header section-header--flex section-header--margin">
+								<h2 class="section-header__title">Must - Watch Shows</h2>
+								<div class="section-header__pagination pagination pagination--bg">
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--left arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow left">
+									</button>
+									<ul class="pagination__dots">
+										<li class="pagination__dot pagination__dot--active"><a aria-label="next slide"
+												href="#"></a>
+										</li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+										<li class="pagination__dot"><a aria-label="next slide" href="#"></a></li>
+									</ul>
+									<button type="button" class="pagination__arrow arrow arrow--hover arrow--right arrow--bg">
+										<img src="img/icons/arrow.svg" alt="arrow right">
+									</button>
+								</div>
+							</div>
+							<ul class="must__cards cards cards--row cards--row-four">
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/13.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">7h 40min</div>
+												<div class="bottom__stars bottom__stars--half-four">12K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/14.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">12h 23min</div>
+												<div class="bottom__stars bottom__stars--five">28K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/15.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">10h 30min</div>
+												<div class="bottom__stars bottom__stars--four">2K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="cards__item">
+									<a class="cards__link" href="#">
+										<div class="cards__article">
+											<div class="cards__picture cards__picture--contain">
+												<img src="img/must/16.webp" alt="movie name">
+											</div>
+											<div class="cards__bottom bottom">
+												<div class="bottom__info bottom__info--timer">8h 20min</div>
+												<div class="bottom__stars bottom__stars--half-four">32K</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+			<section class="page__free free">
+				<div class="free__container">
+					<div class="free__section-header section-header">
+						<div class="section-header__bg section-header__bg--cover"><img src="img/free/bg.webp"
+								alt="free background"></div>
+						<div class="section-header__content">
+							<h1 class="section-header__title section-header__title--bigger">Start your free trial today!
+							</h1>
+							<div class="section-header__text">
+								<p>This is a clear and concise call to action that encourages users to sign up for a free
+									trial
+									of StreamVibe.</p>
+							</div>
+						</div>
+						<a href="#" aria-label="go to a free trail" class="section-header__btn btn btn--hover">Start a Free
+							Trail</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__column">
+						<h3 class="footer__title">Home</h3>
+						<ul class="footer__menu">
+							<li><a href="#">Categories</a></li>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Movies</h3>
+						<ul class="footer__menu">
+							<li><a href="#">Gernes</a></li>
+							<li><a href="#">Trending</a></li>
+							<li><a href="#">New Release</a></li>
+							<li><a href="#">Popular</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Shows</h3>
+						<ul class="footer__menu">
+							<li><a href="#">Gernes</a></li>
+							<li><a href="#">Trending</a></li>
+							<li><a href="#">New Release</a></li>
+							<li><a href="#">Popular</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Support</h3>
+						<ul class="footer__menu">
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Subscription</h3>
+						<ul class="footer__menu">
+							<li><a href="#">Plans</a></li>
+							<li><a href="#">Features</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Connect With Us</h3>
+						<ul class="footer__social-icons icons-social icons-social--contain">
+							<li class="icons-social__item"><a class="icons-social__link icons-social__link--hover"
+									href="#"><img src="img/icons/facebook.svg" alt="Go to Facebook"></a></li>
+							<li class="icons-social__item"><a class="icons-social__link icons-social__link--hover"
+									href="#"><img src="img/icons/twitter.svg" alt="Go to Twitter"></a></li>
+							<li class="icons-social__item"><a class="icons-social__link icons-social__link--hover"
+									href="#"><img src="img/icons/linkedin.svg" alt="Go to LinkedIn"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__policy policy">
+					<div class="policy__reserved">@2023 streamvib, All Rights Reserved</div>
+					<ul class="policy__items">
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

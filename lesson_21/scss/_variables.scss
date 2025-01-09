@@ -1,0 +1,21 @@
+:root {
+	/* fonts */
+	--main-font-family: "Manrope", sans-serif;
+
+	/* colors */
+	--primary-text: #ffffff;
+	--primary-bg: #141414;
+	--header-nav-bg: #0f0f0f;
+	--header-nav-border: #1f1f1f;
+	--header-link: #bfbfbf;
+	--header-link-bg-active: #1a1a1a;
+	--header-burger-border: #262626;
+	--info-text: #999999;
+
+	--pagination-dot: #333333;
+
+	--button-bg: #e50000;
+
+	--hover-image: brightness(0) saturate(100%) invert(14%) sepia(76%) saturate(4258%) hue-rotate(353deg)
+		brightness(102%) contrast(125%);
+}
