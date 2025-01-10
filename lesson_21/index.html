@@ -49,7 +49,7 @@
 				<div class="hero__container">
 					<div class="hero__swiper">
 						<div class="hero__bg hero__bg--cover">
-							<video src="video/avengers_endgame_video.webm" poster="img/hero-bg.webp">
+							<video class="hero__video" src="video/avengers_endgame_video.webm" poster="img/hero-bg.webp">
 								<track kind="subtitles" src="video/subtitles.vtt" srclang="en">
 							</video>
 						</div>
@@ -62,8 +62,12 @@
 									face... Avenge the fallen.</p>
 							</div>
 							<div class="section-header__btns section-header__btns--margin">
-								<button aria-label="play video" type="button" class="section-header__btn btn btn--hover">
+								<button id="play-video" aria-label="play video" type="button"
+									class="section-header__btn btn btn--hover">
 									<img src="img/icons/play.svg" alt="play icon">Play Now</button>
+								<button id="pause-video" aria-label="pause video" type="button"
+									class="section-header__btn btn btn--hover btn--pause">
+									<img src="img/icons/pause.svg" alt="pause icon">Pause</button>
 								<div class="section-header__icons">
 									<button aria-label="add video" type="button"
 										class="section-header__icon icon icon--hover icon--contain">

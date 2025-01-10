@@ -524,6 +524,10 @@ main {
   }
 }
 
+.btn--pause {
+  display: none;
+}
+
 .switch__body {
   border-radius: 0.5rem; /* 8/16 */
   border: 0.0625rem solid var(--header-burger-border);

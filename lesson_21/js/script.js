@@ -16,3 +16,22 @@ if (480 >= window.innerWidth) {
     });
   });
 }
+
+const heroVideo = document.querySelector('.hero__video');
+const playVideo = document.getElementById('play-video');
+const pauseVideo = document.getElementById('pause-video');
+
+const toggleVideo = () => {
+  if (heroVideo.paused || heroVideo.ended) {
+    heroVideo.play();
+    pauseVideo.style.display = 'none';
+    playVideo.style.display = 'flex';
+    console.log(heroVideo);
+  } else {
+    heroVideo.pause();
+    pauseVideo.style.display = 'flex';
+    playVideo.style.display = 'none';
+  }
+};
+playVideo.addEventListener('click', toggleVideo);
+pauseVideo.addEventListener('click', toggleVideo);
