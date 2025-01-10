@@ -18,8 +18,8 @@ if (480 >= window.innerWidth) {
 }
 
 const heroVideo = document.querySelector('.hero__video');
-const playVideo = document.getElementById('play-video');
-const pauseVideo = document.getElementById('pause-video');
+const playVideo = document.querySelector('.btn--video-play');
+const pauseVideo = document.querySelector('.btn--video-pause');
 
 const toggleVideo = () => {
   if (heroVideo.paused || heroVideo.ended) {
