@@ -548,8 +548,10 @@
 		margin-block-end: 1.25rem; /* 20/16 */
 		border-radius: 0.75rem; /* 12/16 */
 		overflow: hidden;
+		background: var(--header-link-bg-active) url("../img/trending/01.webp") center / 100% no-repeat;
 		img {
 			transition: transform 0.3s ease;
+			will-change: transform;
 			@media (any-hover: hover) {
 				&:hover {
 					transform: scale(1.05);

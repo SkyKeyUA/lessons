@@ -806,12 +806,14 @@ main {
           margin-block-end: 1.25rem; /* 20/16 */
   border-radius: 0.75rem; /* 12/16 */
   overflow: hidden;
+  background: var(--header-link-bg-active) url("../img/trending/01.webp") center/100% no-repeat;
 }
 .cards--row .cards__picture img {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  will-change: transform;
 }
 @media (any-hover: hover) {
   .cards--row .cards__picture img:hover {
