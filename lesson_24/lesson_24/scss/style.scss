@@ -1,0 +1,62 @@
+@use "sass:math";
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+
+@import "_mixins.scss";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Manrope", sans-serif;
+	color: #fff;
+	font-size: 1.125rem;
+	background-color: #333;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip; /* clip */
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* --------------------- */
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding-inline: 15px;
+	margin: 0 auto;
+}
+[class*="--margin"] {
+	margin-bottom: 20px;
+}
+
+.page {
+	padding-block: 15px;
+}
+/* --------------------- */
+
+span {
+	opacity: 0;
+	display: inline-block;
+	animation: text 1s linear forwards;
+}
+@keyframes text {
+	0% {
+		opacity: 0;
+		transform: translate(0px, -1.25rem);
+	}
+	100% {
+		opacity: 1;
+	}
+}
