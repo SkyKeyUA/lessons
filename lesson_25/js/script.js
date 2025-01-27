@@ -64,6 +64,8 @@ const changeContent = () => {
   let number = 1;
   const timerSpeed = parseFloat(getElement.getAttribute('data-timer')) || 1000;
   const getCounter = parseFloat(getElement.getAttribute('data-counter')) || 10;
+  //const timerSpeed = parseFloat(getElement.dataset.timer) || 1000;
+  //const getCounter = parseFloat(getElement.dataset.counter) || 10;
   const startTimer = setInterval(() => {
     getElement.innerHTML = `${number}`;
     if (number === getCounter) {
