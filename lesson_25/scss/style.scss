@@ -1,0 +1,90 @@
+@use "sass:math";
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+
+@import "_mixins.scss";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Manrope", sans-serif;
+	color: #fff;
+	font-size: 1.125rem;
+	background-color: #333;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip; /* clip */
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* --------------------- */
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding-inline: 15px;
+	margin: 0 auto;
+}
+[class*="--margin"] {
+	margin-bottom: 20px;
+}
+
+.page {
+	padding-block: 15px;
+}
+/* --------------------- */
+
+.item {
+	&.active {
+		color: yellow;
+		background: red;
+	}
+}
+body {
+	opacity: 0;
+	transition: opacity 0.8s ease;
+	&.loaded {
+		opacity: 1;
+	}
+}
+
+header,
+footer {
+	min-block-size: 200px;
+	inline-size: 100%;
+}
+header {
+	background-color: green;
+}
+footer {
+	background-color: #d12e2e;
+	&.active {
+		background-color: green;
+	}
+}
+body {
+	font-size: 2rem; /* 32/16 */
+}
+span.item {
+	background-color: green;
+	color: #2a1256;
+	transition: opacity 1s ease;
+	padding: 20px;
+	display: inline-block;
+	opacity: 0;
+}
+span.item.animate {
+	opacity: 1;
+}

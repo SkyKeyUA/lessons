@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* Підключення фрифтів */
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url("reset.css");
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* .... */
+/* Скидання стилів */
+/* Основні стилі */
+body {
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  background-color: #333;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip; /* clip */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* --------------------- */
+[class*=__container] {
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+[class*="--margin"] {
+  margin-bottom: 20px;
+}
+
+.page {
+  padding-block: 15px;
+}
+
+/* --------------------- */
+.item.active {
+  color: yellow;
+  background: red;
+}
+
+body {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+}
+body.loaded {
+  opacity: 1;
+}
+
+header,
+footer {
+  min-block-size: 200px;
+  inline-size: 100%;
+}
+
+header {
+  background-color: green;
+}
+
+footer {
+  background-color: #d12e2e;
+}
+footer.active {
+  background-color: green;
+}
+
+body {
+  font-size: 2rem; /* 32/16 */
+}
+
+span.item {
+  background-color: green;
+  color: #2a1256;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  padding: 20px;
+  display: inline-block;
+  opacity: 0;
+}
+
+span.item.animate {
+  opacity: 1;
+}
