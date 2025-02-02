@@ -11,19 +11,17 @@ console.log(bodyElementTwo);
 // з певною кількістю LI (кількість має передаватись як параметр функції, також мати значення за замовченням)
 
 const createList = (items = 3) => {
-  if (bodyElement) {
-    items = parseInt(items);
-    if (!isFinite(items) || typeof items !== 'number') {
-      return console.log('Невірне значення');
-    }
-    const newList = document.createElement('ul');
-    for (let i = 1; items >= i; i++) {
-      const newItem = document.createElement('li');
-      newItem.innerText = i;
-      newList.insertAdjacentElement('beforeend', newItem);
-    }
-    bodyElement.insertAdjacentElement('afterbegin', newList);
+  items = parseInt(items);
+  if (!isFinite(items)) {
+    return console.log('Невірне значення');
   }
+  const newList = document.createElement('ul');
+  for (let i = 1; items >= i; i++) {
+    const newItem = document.createElement('li');
+    newItem.innerText = i;
+    newList.insertAdjacentElement('beforeend', newItem);
+  }
+  bodyElement.insertAdjacentElement('afterbegin', newList);
 };
 
 createList('10');
@@ -51,7 +49,7 @@ const listItems = document.querySelectorAll('.item');
 
 listItems.forEach((item, index) => {
   item.classList.add('active');
-  item.innerHTML = `Елемент №${index + 1}`;
+  item.innerText = `Елемент №${index + 1}`;
 });
 
 // Задача №5
@@ -60,15 +58,15 @@ listItems.forEach((item, index) => {
 
 const getButton = document.querySelector('.button');
 
-const scrollToButton = (element) => {
-  element.scrollIntoView({
-    block: 'center',
-    behavior: 'smooth',
-  });
+const scrollToElement = (element) => {
+  if (element) {
+    element.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth',
+    });
+  }
 };
-if (getButton) {
-  scrollToButton(getButton);
-}
+scrollToElement(getButton);
 
 // Задача №6
 // Дано в html: посилання з класом link
@@ -77,9 +75,11 @@ if (getButton) {
 // пофарбувати колір тексту посилання в червоний
 
 const getLink = document.querySelector('.link');
-getLink.setAttribute('data-number', '100');
-console.log(typeof getLink.getAttribute('data-number'));
-if (getLink.getAttribute('data-number') < 200) {
-  getLink.style.color = 'red';
+if (getLink) {
+  getLink.setAttribute('data-number', '100');
+  console.log(typeof getLink.getAttribute('data-number'));
+  if (getLink.getAttribute('data-number') < 200) {
+    getLink.style.color = 'red';
+  }
+  console.log(getLink);
 }
-console.log(getLink);
