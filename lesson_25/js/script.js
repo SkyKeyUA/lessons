@@ -8,15 +8,11 @@
 
 const documentAction = (e) => {
   const elementTarget = e.target;
-  if (e.type === 'click') {
+
+  if (elementTarget.closest('.item')) {
     const currentElement = elementTarget.closest('.item');
-    if (elementTarget.closest('.item')) {
-      currentElement.classList.toggle('active');
-      const tag = currentElement.tagName;
-      if (tag === 'A') {
-        e.preventDefault();
-      }
-    }
+    currentElement.classList.toggle('active');
+    e.preventDefault();
   }
 };
 document.addEventListener('click', documentAction);
@@ -41,14 +37,16 @@ const getTagFooter = document.querySelector('footer');
 
 const changeBackground = (e) => {
   if (e.type === 'mouseenter') {
-    getTagFooter.style.backgroundColor = 'green';
-  } else if (e.type === 'mouseleave') {
-    getTagFooter.style.backgroundColor = '';
+    getTagFooter.classList.add('background--green');
+  } else {
+    getTagFooter.classList.remove('background--green');
   }
 };
 
-getTagHeader.addEventListener('mouseenter', changeBackground);
-getTagHeader.addEventListener('mouseleave', changeBackground);
+if (getTagHeader && getTagFooter) {
+  getTagHeader.addEventListener('mouseenter', changeBackground);
+  getTagHeader.addEventListener('mouseleave', changeBackground);
+}
 
 // Задача №4
 // Дано в html: текст, елемент з класом item, текст. Так, що елемент з класом item за межами в'юпотрта.
@@ -57,13 +55,11 @@ getTagHeader.addEventListener('mouseleave', changeBackground);
 // Функція має запустатить коли ми доскролюємо до елементу item (його видно), і не запускатись повторно.
 
 const getElement = document.querySelector('span.item');
-let seeElement = true;
 
-const changeContent = () => {
-  seeElement = false;
+const changeContent = (watchElement) => {
   let number = 1;
-  const timerSpeed = parseFloat(getElement.getAttribute('data-timer')) || 1000;
-  const getCounter = parseFloat(getElement.getAttribute('data-counter')) || 10;
+  const timerSpeed = parseFloat(watchElement.getAttribute('data-timer')) || 1000;
+  const getCounter = parseFloat(watchElement.getAttribute('data-counter')) || 10;
   //const timerSpeed = parseFloat(getElement.dataset.timer) || 1000;
   //const getCounter = parseFloat(getElement.dataset.counter) || 10;
   const startTimer = setInterval(() => {
@@ -94,12 +90,13 @@ const options = {
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
-    const currentElement = entry.target;
     if (entry.isIntersecting) {
-      if (getElement && seeElement) {
+      if (entry.target) {
+        const currentElement = entry.target;
         currentElement.classList.add('animate');
-        changeContent();
+        changeContent(currentElement);
         console.log('працює тільки 1 раз');
+        observer.unobserve(entry.target);
       }
     }
   });
