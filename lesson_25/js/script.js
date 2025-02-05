@@ -57,19 +57,21 @@ if (getTagHeader && getTagFooter) {
 const getElement = document.querySelector('span.item');
 
 const changeContent = (watchElement) => {
-  let number = 1;
-  const timerSpeed = parseFloat(watchElement.getAttribute('data-timer')) || 1000;
-  const getCounter = parseFloat(watchElement.getAttribute('data-counter')) || 10;
-  //const timerSpeed = parseFloat(getElement.dataset.timer) || 1000;
-  //const getCounter = parseFloat(getElement.dataset.counter) || 10;
-  const startTimer = setInterval(() => {
-    getElement.innerHTML = `${number}`;
-    if (number === getCounter) {
-      clearInterval(startTimer);
-      console.log('Зупинка');
-    }
-    ++number;
-  }, timerSpeed);
+  let number = 0;
+  const timerSpeed = parseFloat(watchElement.getAttribute('data-timer')) || 10;
+  const getCounter = parseFloat(watchElement.getAttribute('data-counter'));
+  //const timerSpeed = parseFloat(getElement.dataset.timer);
+  //const getCounter = parseFloat(getElement.dataset.counter);
+  if (isFinite(timerSpeed) && isFinite(getCounter)) {
+    const startTimer = setInterval(() => {
+      getElement.innerHTML = `${number}`;
+      if (number >= getCounter) {
+        clearInterval(startTimer);
+        console.log('Зупинка');
+      }
+      ++number;
+    }, timerSpeed);
+  }
 };
 
 // const changeContent = () => {
@@ -91,13 +93,11 @@ const options = {
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      if (entry.target) {
-        const currentElement = entry.target;
-        currentElement.classList.add('animate');
-        changeContent(currentElement);
-        console.log('працює тільки 1 раз');
-        observer.unobserve(entry.target);
-      }
+      const currentElement = entry.target;
+      currentElement.classList.add('animate');
+      changeContent(currentElement);
+      console.log('працює тільки 1 раз');
+      observer.unobserve(entry.target);
     }
   });
 };
